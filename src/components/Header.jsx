@@ -22,9 +22,14 @@ const Header = () => {
         </div>
 
         <div>
-          <div className='w-[50rem]'>
+          <div className='w-[45rem]'>
             <img src={travelMan} alt="Happy Man Ready To Travel" />
           </div>
+        </div>
+      </div>
+
+      <div className='flex justify-center bg-white'>
+        <div>
         </div>
       </div>
     </div>
