@@ -3,7 +3,7 @@ import Header from '../components/Header'
 import Navbar from '../components/Navbar'
 import SearchSection from "../components/SearchSection";
 
-const MainHero = () => {
+const Home = () => {
   return (
     <div className='bg-bg-c'>
         <Navbar/>
@@ -13,4 +13,4 @@ const MainHero = () => {
   )
 }
 
-export default MainHero
+export default Home
