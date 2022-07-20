@@ -3,10 +3,10 @@ import logo from "../assets/logo.png"
 
 const Navbar = () => {
   return (
-    <nav className="pt-6">
+    <nav className="pt-6 font-text">
       <div className="flex justify-around items-center">
         <div className="flex flex-row items-center gap-2">
-          <h3 className="text-2xl font-bold">Botel</h3>
+          <h3 className="text-2xl font-bold font-header">Botel</h3>
           <div>
             <img src={logo} alt="Botel Logo" />
           </div>
@@ -35,7 +35,7 @@ const Navbar = () => {
           <button href="#" className="text-[#FD8D3A]">
             Login
           </button>
-          <button className="bg-[#FA7436] text-white rounded-md w-[8rem] p-2 font-semibold drop-shadow-xl">
+          <button className="bg-bg-o text-white rounded-md w-[8rem] p-2 font-semibold drop-shadow-xl">
             Sign up
           </button>
         </div>
