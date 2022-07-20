@@ -1,11 +1,11 @@
-import React from 'react'
-import travelMan from "../assets/man.png"
+import React from "react";
+import travelMan from "../assets/man.png";
 
 const Header = () => {
   return (
     <div>
       <div className="flex flex-row pl-16 pt-9 justify-center items-center">
-        <div className='w-[36rem] pt-20'>
+        <div className="w-[36rem] pt-20">
           <h1 className="text-[64px] font-semibold leading-none font-header tracking-wide">
             Get started your exciting
             <span className="text-primary-o"> Journey</span> with us.
@@ -22,18 +22,17 @@ const Header = () => {
         </div>
 
         <div>
-          <div className='w-[45rem]'>
+          <div className="w-[45rem]">
             <img src={travelMan} alt="Happy Man Ready To Travel" />
           </div>
         </div>
       </div>
 
-      <div className='flex justify-center bg-white'>
-        <div>
-        </div>
-      </div>
+      {/* <div className="flex justify-center bg-white">
+        <div></div>
+      </div> */}
     </div>
   );
-}
+};
 
-export default Header
+export default Header;

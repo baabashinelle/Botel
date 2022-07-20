@@ -35,7 +35,7 @@ const Navbar = () => {
           <button href="#" className="text-[#FD8D3A]">
             Login
           </button>
-          <button className="bg-bg-o text-white rounded-md w-[8rem] p-2 font-semibold drop-shadow-xl">
+          <button className="bg-bg-o text-white rounded-md w-[8rem] p-2 drop-shadow-xl">
             Sign up
           </button>
         </div>
