@@ -27,10 +27,6 @@ const Header = () => {
           </div>
         </div>
       </div>
-
-      {/* <div className="flex justify-center bg-white">
-        <div></div>
-      </div> */}
     </div>
   );
 };

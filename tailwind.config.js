@@ -21,7 +21,12 @@ module.exports = {
         "btn-o": "#fa7436",
         "bg-o": "#fa7436",
         "bg-c": "#fefcfb",
-        "bg-off": "#f7f8fc"
+        "bg-off": "#f7f8fc",
+      },
+      backgroundImage: {
+        "card-o": "url('./assets/bgLineO.png')",
+        "card-b": "url('./assets/bgLineB.png')",
+        "card-y": "url('./assets/bgLineY.png')",
       },
     },
   },

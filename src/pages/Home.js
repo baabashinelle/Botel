@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../components/Header'
 import Navbar from '../components/Navbar'
+import Necessities from '../components/Necessities';
 import SearchSection from "../components/SearchSection";
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
         <Navbar/>
         <Header/>
         <SearchSection/>
+        <Necessities/>
     </div>
   )
 }
