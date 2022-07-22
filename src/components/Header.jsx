@@ -1,5 +1,9 @@
 import React from "react";
 import travelMan from "../assets/man.png";
+import mapIcon from '../assets/map.png';
+import starIcon from "../assets/star.png";
+import trophyIcon from "../assets/trophy.png";
+
 
 const Header = () => {
   return (
@@ -21,10 +25,22 @@ const Header = () => {
           </div>
         </div>
 
-        <div>
+        <div className="grid">
           <div className="w-[45rem]">
             <img src={travelMan} alt="Happy Man Ready To Travel" />
           </div>
+          {/* <div className="flex items-center bg-white p-2 w-fit h-fit">
+            <img src={trophyIcon} alt="Trophy Icon" />
+            <p>Best Hotel Awards</p>
+          </div>
+          <div className="flex items-center bg-white p-2 w-fit h-fit">
+            <img src={starIcon} alt="Star Icon" />
+            <p>27K Customers</p>
+          </div>
+          <div className="flex items-center bg-white p-2 w-fit h-fit">
+            <img src={mapIcon} alt="Map Icon" />
+            <p>Explore the World</p>
+          </div> */}
         </div>
       </div>
     </div>
