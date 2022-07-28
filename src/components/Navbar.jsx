@@ -36,7 +36,7 @@ const Navbar = () => {
             Login
           </button>
           <button className="bg-bg-o text-white rounded-md w-[8rem] p-2 drop-shadow-xl">
-            Sign up
+            Sign uppp
           </button>
         </div>
       </div>
