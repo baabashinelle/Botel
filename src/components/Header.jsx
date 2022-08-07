@@ -12,7 +12,7 @@ const Header = () => {
         <div className="w-[36rem] pt-20">
           <h1 className="text-[64px] font-semibold leading-none font-header tracking-wide">
             Get started your exciting
-            <span className="text-primary-o"> Journey</span> with us.
+            <span className="text-primary-o"> Trip</span> with us.
           </h1>
           <p className="text-xl text-text-light w-[30rem] pt-10 pb-10 font-text leading-9">
             A Team of experienced tourism professionals will provide you with
