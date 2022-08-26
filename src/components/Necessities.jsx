@@ -5,7 +5,7 @@ const Necessities = () => {
   return (
     <div className="bg-bg-off flex flex-col justify-center items-center pt-24 pb-20">
       <div>
-        <h3 className="font-header font-bold text-primary-b text-center text-4xl after:content-[url('./assets/TwoPlanes.png')] after:block after:absolute after:right-56 after:-bottom-[30rem]">
+        <h3 className="font-header font-bold text-primary-b text-center text-4xl relative after:content-[url('./assets/TwoPlanes.png')] after:block after:absolute after:left-[15em] after:-top-[0.3em]">
           Things you need <span className="text-primary-o">to do</span>
         </h3>
         <p className="text-text-light font-text text-center text-lg w-[30rem] pt-10 pb-14">
