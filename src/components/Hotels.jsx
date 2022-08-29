@@ -56,7 +56,7 @@ const Hotels = () => {
         </div>
       </article>
       <article>
-        <img src={hotelOne} alt="Random Hotel"></img>
+        <img src={hotelFour} alt="Random Hotel"></img>
         <div className="px-4 py-7 border-x-2 border-b-2 rounded-b-md">
           <div className="flex justify-between pb-2">
             <h4 className="font-bold text-lg">Firenze</h4>
