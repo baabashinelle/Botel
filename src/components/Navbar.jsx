@@ -32,10 +32,10 @@ const Navbar = () => {
         </article>
 
         <article className="gap-5 flex">
-          <button href="#" className="text-[#FD8D3A]">
+          <button href="#" className="text-[#FD8D3A] font-bold">
             Login
           </button>
-          <button className="bg-bg-o text-white rounded-md w-[8rem] p-2 drop-shadow-xl">
+          <button className="bg-bg-o text-white rounded-md w-[8rem] p-2 drop-shadow-xl font-bold">
             Sign up
           </button>
         </article>
