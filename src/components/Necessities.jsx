@@ -3,7 +3,7 @@ import NecessaryCards from '../components/NecessaryCards';
 
 const Necessities = () => {
   return (
-    <div className="bg-bg-off flex flex-col justify-center items-center pt-24 pb-20">
+    <section className="bg-bg-off flex flex-col justify-center items-center pt-24 pb-20">
       <div>
         <h3 className="font-header font-bold text-primary-b text-center text-4xl relative after:content-[url('./assets/TwoPlanes.png')] after:block after:absolute after:left-[15em] after:-top-[0.3em]">
           Things you need <span className="text-primary-o">to do</span>
@@ -17,7 +17,7 @@ const Necessities = () => {
       <div>
         <NecessaryCards />
       </div>
-    </div>
+    </section>
   );
 }
 
