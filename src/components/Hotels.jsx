@@ -3,7 +3,6 @@ import { HiLocationMarker } from "react-icons/hi"
 import hotelFour from "../assets/hotel4.png";
 import hotelTwo from "../assets/hotel2.png";
 import hotelThree from "../assets/hotel3.png";
-import hotelOne from "../assets/hotel1.png";
 import star from "../assets/review-star.png";
 
 const Hotels = () => {

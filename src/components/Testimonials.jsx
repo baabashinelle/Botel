@@ -1,12 +1,13 @@
 import React from 'react'
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
+import avatarImg from "../assets/avatar.JPG";
 
 const Testimonials = () => {
   return (
-    <section className="bg-bg-off flex justify-center items-center pt-24 pb-20 relative after:content-[url('./assets/planes.png')] after:block after:absolute after:right-[15em] after:top-[2em]">
-      <div>
+    <section className="bg-bg-off flex justify-center items-center gap-24 pt-24 pb-20 font-text">
+      <div className="relative after:content-[url('./assets/planes.png')] after:block after:absolute after:-right-[45em] after:-top-[4em]">
         <article>
-          <h3 className="font-header font-bold text-primary-b text-center text-4xl">
+          <h3 className="font-header font-bold text-primary-b text-4xl">
             What people say <span className="text-primary-o">about us.</span>
           </h3>
           <p className="text-text-light font-text text-lg w-[30rem] pt-10 pb-14">
@@ -14,7 +15,7 @@ const Testimonials = () => {
             them.
           </p>
         </article>
-        <article className="flex pt-4 text-3xl gap-5">
+        <article className="flex text-3xl gap-5">
           <div className="border-2 rounded-full text-gray-400 cursor-pointer bg-white">
             <BsArrowLeftShort />
           </div>
@@ -23,8 +24,25 @@ const Testimonials = () => {
           </div>
         </article>
       </div>
-      <div className='grid'>
-        <div></div>
+      <div className="grid">
+        <article>
+          <img
+            src={avatarImg}
+            alt="avatar"
+            className="rounded-full w-16 h-16"
+          ></img>
+        </article>
+        <article className="bg-white py-5 px-8 rounded-lg w-[30rem]">
+          <p className="text-base">
+            “On the Windows talking painted pasture yet its express parties use.
+            Sure last upon he same as knew next. Of believed or diverted no.”
+          </p>
+          <p className="pt-5">
+            <h4 className="font-bold text-sm">Mike Taylor</h4>
+            <p className="text-xs">Lahore, Pakistan</p>
+          </p>
+        </article>
+        <article></article>
       </div>
     </section>
   );
