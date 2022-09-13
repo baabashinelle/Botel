@@ -5,6 +5,7 @@ import Header from '../components/Header'
 import Navbar from '../components/Navbar'
 import Necessities from '../components/Necessities';
 import SearchSection from "../components/SearchSection";
+import Testimonials from '../components/Testimonials';
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
         <Necessities />
         <Deals/>
         <BestPlan/>
+        <Testimonials/>
       </div>
     </>
   );
