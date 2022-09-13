@@ -24,15 +24,15 @@ const Testimonials = () => {
           </div>
         </article>
       </div>
-      <div className="grid">
+      <div className="grid grid-cols-[repeat(3, minmax(0, 10rem)] grid-rows-[repeat(3, minmax(0, 10rem)]">
         <article>
           <img
             src={avatarImg}
             alt="avatar"
-            className="rounded-full w-16 h-16"
+            className="rounded-full w-16 h-16 col-start-1 col-end-2 row-start-2"
           ></img>
         </article>
-        <article className="bg-white py-5 px-8 rounded-lg w-[30rem]">
+        <article className="bg-white py-5 px-8 rounded-lg w-[30rem] col-start-1 col-end-2 row-start-2">
           <p className="text-base">
             “On the Windows talking painted pasture yet its express parties use.
             Sure last upon he same as knew next. Of believed or diverted no.”
@@ -42,7 +42,16 @@ const Testimonials = () => {
             <p className="text-xs">Lahore, Pakistan</p>
           </p>
         </article>
-        <article></article>
+        <article className="bg-white py-5 px-8 rounded-lg w-[30rem] opacity-50 col-start-1 col-end-2 row-start-3 row-end-2 ">
+          <p className="text-base">
+            “On the Windows talking painted pasture yet its express parties use.
+            Sure last upon he same as knew next. Of believed or diverted no.”
+          </p>
+          <p className="pt-5">
+            <h4 className="font-bold text-sm">Chris Taylor</h4>
+            <p className="text-xs">Lahore, Pakistan</p>
+          </p>
+        </article>
       </div>
     </section>
   );
