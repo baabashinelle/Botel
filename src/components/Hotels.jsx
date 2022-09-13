@@ -11,7 +11,7 @@ const Hotels = () => {
     <section className="grid grid-cols-4 gap-6 font-text">
       <article className="hover:shadow-2xl cursor-pointer hover:shadow-[#ffe7db]">
         <img src={hotelFour} alt="Random Hotel"></img>
-        <div className="px-4 py-7 border-x-2 border-b-2 rounded-b-md">
+        <div className="px-4 py-7 border-x-2 border-b-2 rounded-b-md hover:border-none">
           <div className="flex justify-between pb-2">
             <h4 className="font-bold text-lg">Madrid</h4>
             <div className="flex items-center gap-2">
@@ -34,7 +34,7 @@ const Hotels = () => {
       </article>
       <article className="hover:shadow-2xl cursor-pointer hover:shadow-[#ffe7db]">
         <img src={hotelTwo} alt="Random Hotel"></img>
-        <div className="px-4 py-7 border-x-2 border-b-2 rounded-b-md">
+        <div className="px-4 py-7 border-x-2 border-b-2 rounded-b-md hover:border-none">
           <div className="flex justify-between pb-2">
             <h4 className="font-bold text-lg">Paris</h4>
             <div className="flex items-center gap-2">
@@ -57,7 +57,7 @@ const Hotels = () => {
       </article>
       <article className="hover:shadow-2xl cursor-pointer hover:shadow-[#ffe7db]">
         <img src={hotelFour} alt="Random Hotel"></img>
-        <div className="px-4 py-7 border-x-2 border-b-2 rounded-b-md">
+        <div className="px-4 py-7 border-x-2 border-b-2 rounded-b-md hover:border-none">
           <div className="flex justify-between pb-2">
             <h4 className="font-bold text-lg">Firenze</h4>
             <div className="flex items-center gap-2">
@@ -80,7 +80,7 @@ const Hotels = () => {
       </article>
       <article className="hover:shadow-2xl cursor-pointer hover:shadow-[#ffe7db]">
         <img src={hotelThree} alt="Random Hotel"></img>
-        <div className="px-4 py-7 border-x-2 border-b-2 rounded-b-md">
+        <div className="px-4 py-7 border-x-2 border-b-2 rounded-b-md hover:border-none">
           <div className="flex justify-between pb-2">
             <h4 className="font-bold text-lg">London</h4>
             <div className="flex items-center gap-2">
