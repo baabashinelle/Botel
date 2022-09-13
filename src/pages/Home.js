@@ -1,4 +1,5 @@
 import React from 'react'
+import BestPlans from '../components/BestPlans';
 import Deals from '../components/Deals';
 import Header from '../components/Header'
 import Navbar from '../components/Navbar'
@@ -16,6 +17,7 @@ const Home = () => {
       <div>
         <Necessities />
         <Deals/>
+        <BestPlans/>
       </div>
     </>
   );
