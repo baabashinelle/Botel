@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
 import avatarImg from "../assets/avatar.JPG";
 
@@ -24,15 +24,15 @@ const Testimonials = () => {
           </div>
         </article>
       </div>
-      <div className="grid grid-cols-[repeat(3, minmax(0, 10rem)] grid-rows-[repeat(3, minmax(0, 10rem)]">
-        <article>
+      <div className="flex flex-col">
+        <article className="-mb-3 -ml-5 z-30">
           <img
             src={avatarImg}
             alt="avatar"
-            className="rounded-full w-16 h-16 col-start-1 col-end-2 row-start-2"
+            className="rounded-full w-16 h-16"
           ></img>
         </article>
-        <article className="bg-white py-5 px-8 rounded-lg w-[30rem] col-start-1 col-end-2 row-start-2">
+        <article className="bg-white py-5 px-8 rounded-lg w-[30rem] z-10 drop-shadow-md">
           <p className="text-base">
             “On the Windows talking painted pasture yet its express parties use.
             Sure last upon he same as knew next. Of believed or diverted no.”
@@ -42,19 +42,19 @@ const Testimonials = () => {
             <p className="text-xs">Lahore, Pakistan</p>
           </p>
         </article>
-        <article className="bg-white py-5 px-8 rounded-lg w-[30rem] opacity-50 col-start-1 col-end-2 row-start-3 row-end-2 ">
+        <article className="bg-white py-5 px-8 rounded-lg w-[30rem] opacity-50 -mt-24 ml-10">
           <p className="text-base">
             “On the Windows talking painted pasture yet its express parties use.
             Sure last upon he same as knew next. Of believed or diverted no.”
           </p>
           <p className="pt-5">
             <h4 className="font-bold text-sm">Chris Taylor</h4>
-            <p className="text-xs">Lahore, Pakistan</p>
+            <p className="text-xs">CEO of Apple</p>
           </p>
         </article>
       </div>
     </section>
   );
-}
+};
 
-export default Testimonials
+export default Testimonials;
