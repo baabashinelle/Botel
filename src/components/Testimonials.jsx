@@ -4,7 +4,7 @@ import avatarImg from "../assets/avatar.JPG";
 
 const Testimonials = () => {
   return (
-    <section className="bg-bg-off flex justify-center items-center gap-24 pt-24 pb-20 font-text">
+    <section className="bg-bg-off flex justify-center items-center gap-16 pt-24 pb-20 font-text">
       <div className="relative after:content-[url('./assets/planes.png')] after:block after:absolute after:-right-[45em] after:-top-[4em]">
         <article>
           <h3 className="font-header font-bold text-primary-b text-4xl">
