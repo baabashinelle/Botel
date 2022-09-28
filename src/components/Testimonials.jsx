@@ -42,7 +42,7 @@ const Testimonials = () => {
             <p className="text-xs">Lahore, Pakistan</p>
           </p>
         </article>
-        <article className="bg-white py-5 px-8 rounded-lg w-[30rem] opacity-50 -mt-24 ml-10">
+        <article className="bg-white py-5 px-8 rounded-lg w-[30rem] opacity-50 -mt-24 ml-10 drop-shadow-xl">
           <p className="text-base">
             “On the Windows talking painted pasture yet its express parties use.
             Sure last upon he same as knew next. Of believed or diverted no.”
