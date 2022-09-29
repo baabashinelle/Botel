@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import tallBuilding from "../assets/tall-building.png";
@@ -8,7 +8,7 @@ import rock from "../assets/rocks.png";
 
 const responsive = {
   0: { items: 1 },
-  568: { items: 2 },
+  568: { items: 3 },
   1024: { items: 4 },
 };
 
@@ -65,11 +65,11 @@ const Blog = () => {
           items={items}
           responsive={responsive}
           controlsStrategy="alternate"
-          disableButtonsControls = {true}
+          disableButtonsControls={true}
         />
       </article>
     </section>
   );
-}
+};
 
-export default Blog
+export default Blog;

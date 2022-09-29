@@ -4,3 +4,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Blog Carousel */
+.alice-carousel__dots-item:not(.__custom).__active {
+    background-color: #FA7436!important;
+    padding: 0.35rem;
+}
