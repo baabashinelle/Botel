@@ -6,6 +6,7 @@ import Header from '../components/Header'
 import Navbar from '../components/Navbar'
 import Necessities from '../components/Necessities';
 import SearchSection from "../components/SearchSection";
+import Subscribe from '../components/Subscribe';
 import Testimonials from '../components/Testimonials';
 
 const Home = () => {
@@ -22,6 +23,7 @@ const Home = () => {
         <BestPlan/>
         <Testimonials/>
         <Blog/> 
+        <Subscribe/>
       </div>
     </>
   );
