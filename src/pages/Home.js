@@ -2,6 +2,7 @@ import React from 'react'
 import BestPlan from '../components/BestPlan';
 import Blog from '../components/Blog';
 import Deals from '../components/Deals';
+import Footer from '../components/Footer';
 import Header from '../components/Header'
 import Navbar from '../components/Navbar'
 import Necessities from '../components/Necessities';
@@ -24,6 +25,7 @@ const Home = () => {
         <Testimonials/>
         <Blog/> 
         <Subscribe/>
+        <Footer/>
       </div>
     </>
   );
