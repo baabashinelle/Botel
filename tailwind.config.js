@@ -29,8 +29,11 @@ module.exports = {
         "card-y": "url('./assets/bgLineY.png')",
       },
       gridTemplateColumns: {
-        'ten': 'repeat(8, 12.5%)',
-        },
+        custom: "repeat(8, 10.5%)",
+      },
+      gridTemplateRows: {
+        custom: "repeat(6, 10.5%)",
+      },
     },
   },
   plugins: [],
