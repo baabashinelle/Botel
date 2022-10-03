@@ -28,6 +28,9 @@ module.exports = {
         "card-b": "url('./assets/bgLineB.png')",
         "card-y": "url('./assets/bgLineY.png')",
       },
+      gridTemplateColumns: {
+        'ten': 'repeat(8, 12.5%)',
+        },
     },
   },
   plugins: [],

@@ -25,13 +25,15 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="grid">
-          <div className="w-[45rem]">
+        <div className="grid ">
+          <div className="w-[45rem] col-start-1 col-end-8">
             <img src={travelMan} alt="Happy Man Ready To Travel" />
           </div>
-          {/* <div className="flex items-center bg-white p-2 w-fit h-fit">
-            <img src={trophyIcon} alt="Trophy Icon" />
-            <p>Best Hotel Awards</p>
+          {/* <div className="col-start-1 col-end-3 row-start-1">
+            <div className="flex items-center bg-white p-2 w-fit h-fit">
+              <img src={trophyIcon} alt="Trophy Icon" />
+              <p>Best Hotel Awards</p>
+            </div>
           </div>
           <div className="flex items-center bg-white p-2 w-fit h-fit">
             <img src={starIcon} alt="Star Icon" />
