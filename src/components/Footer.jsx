@@ -19,13 +19,13 @@ const Footer = () => {
             Book your stay in minutes, get full control for much longer.
           </p>
           <div className="flex gap-5">
-            <span className="p-3 bg-white rounded-full drop-shadow-md">
+            <span className="p-3 bg-white rounded-full drop-shadow-md hover:bg-primary-o hover:text-white hover:cursor-pointer">
               <FaFacebookF />
             </span>
-            <span className="p-3 bg-white rounded-full drop-shadow-md">
+            <span className="p-3 bg-white rounded-full drop-shadow-md hover:bg-primary-o hover:text-white hover:cursor-pointer">
               <BsInstagram />
             </span>
-            <span className="p-3 bg-white rounded-full drop-shadow-md">
+            <span className="p-3 bg-white rounded-full drop-shadow-md hover:bg-primary-o hover:text-white hover:cursor-pointer">
               <AiOutlineTwitter />
             </span>
           </div>
