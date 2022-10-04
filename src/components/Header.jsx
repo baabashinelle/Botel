@@ -8,8 +8,8 @@ import trophyIcon from "../assets/trophy.png";
 const Header = () => {
   return (
     <section>
-      <div className="flex flex-row pl-16 justify-center">
-        <article className="w-[36rem] self-center">
+      <div className="flex flex-row pl-16 pt-10 justify-center items-center">
+        <article className="w-[36rem]">
           <h1 className="text-[64px] font-semibold leading-none font-header tracking-wide">
             Get started your exciting
             <span className="text-primary-o"> Stay</span> with us.
@@ -25,23 +25,23 @@ const Header = () => {
           </div>
         </article>
 
-        <article className="grid grid-cols-custom grid-rows-custom font-text self-end">
-          <div className="w-[45rem] col-start-1 col-end-8">
-            <img src={travelMan} alt="Happy Man Ready To Travel" />
+        <article className="grid grid-cols-custom grid-rows-custom font-text">
+          <div className="w-[45rem] col-start-1 col-end-9 row-start-1 row-end-6">
+            <img src={travelMan} alt="Happy Man Ready To Travel"/>
           </div>
-          <div className="col-start-1 row-start-3">
+          <div className="col-start-1 col-end-3 row-start-3 row-end-4">
             <div className="flex items-center gap-3 bg-white p-2 w-[16ch] h-fit rounded-md drop-shadow-md">
               <img src={trophyIcon} alt="Trophy Icon" />
               <p>Best Hotel Awards</p>
             </div>
           </div>
-          <div className="col-start-2 row-start-6">
+          <div className="col-start-2 col-end-5 row-start-6 row-end-7">
             <div className="flex items-center gap-3 bg-white p-2 w-[20ch] h-fit rounded-md drop-shadow-md">
               <img src={starIcon} alt="Star Icon" />
               <p>27K Customer Reviews</p>
             </div>
           </div>
-          <div className="col-start-7 row-start-4">
+          <div className="col-start-7 col-end-9 row-start-4 row-end-5">
             <div className="flex items-center gap-3 bg-white p-2 w-[16ch] h-fit rounded-md drop-shadow-md">
               <img src={mapIcon} alt="Map Icon" />
               <p>Explore the World</p>
