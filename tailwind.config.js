@@ -32,7 +32,7 @@ module.exports = {
         custom: "repeat(8, 10.5%)",
       },
       gridTemplateRows: {
-        custom: "repeat(6, 10.5%)",
+        custom: "repeat(7, 10.5%)",
       },
     },
   },

@@ -1,14 +1,13 @@
 import React from "react";
 import travelMan from "../assets/man.png";
-import mapIcon from '../assets/map.png';
+import mapIcon from "../assets/map.png";
 import starIcon from "../assets/star.png";
 import trophyIcon from "../assets/trophy.png";
-
 
 const Header = () => {
   return (
     <section>
-      <div className="flex flex-row pl-16 pt-10 justify-center items-center">
+      <div className="flex flex-row pl-16 justify-center items-center">
         <article className="w-[36rem]">
           <h1 className="text-[64px] font-semibold leading-none font-header tracking-wide">
             Get started your exciting
@@ -25,9 +24,9 @@ const Header = () => {
           </div>
         </article>
 
-        <article className="grid grid-cols-custom grid-rows-custom font-text">
-          <div className="w-[45rem] col-start-1 col-end-9 row-start-1 row-end-6">
-            <img src={travelMan} alt="Happy Man Ready To Travel"/>
+        <article className="grid grid-cols-custom grid-rows-custom font-text content-center">
+          <div className="w-[45rem] col-start-1 col-end-9 row-start-1 row-end-8">
+            <img src={travelMan} alt="Happy Man Ready To Travel" />
           </div>
           <div className="col-start-1 col-end-3 row-start-3 row-end-4">
             <div className="flex items-center gap-3 bg-white p-2 w-[16ch] h-fit rounded-md drop-shadow-md">
