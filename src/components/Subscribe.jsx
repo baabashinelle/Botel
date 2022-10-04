@@ -15,9 +15,9 @@ const Subscribe = () => {
           <input
             type="text"
             placeholder="Enter your mail"
-            className="relative rounded-md px-8 py-3 w-full"
+            className="relative rounded-md px-8 py-3 w-full z-20"
           ></input>
-          <button className="bg-bg-o text-white rounded-md py-2 px-3 absolute right-[14.25rem] bottom-[6.25rem]">
+          <button className="bg-bg-o text-white rounded-md py-2 px-3 absolute right-[14.25rem] bottom-[6.25rem] z-30">
             Subscribe
           </button>
         </div>
