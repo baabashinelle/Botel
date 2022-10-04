@@ -25,7 +25,7 @@ const Header = () => {
           </div>
         </article>
 
-        <article className="grid grid-cols-custom grid-rows-custom font-text">
+        <article className="grid grid-cols-custom grid-rows-custom font-text self-end">
           <div className="w-[45rem] col-start-1 col-end-8">
             <img src={travelMan} alt="Happy Man Ready To Travel" />
           </div>
