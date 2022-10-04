@@ -15,13 +15,19 @@ const Footer = () => {
               <img src={logo} alt="Botel Logo" />
             </div>
           </div>
-          <p className="w-[30ch]">
+          <p className="w-[30ch] pb-2">
             Book your stay in minutes, get full control for much longer.
           </p>
           <div className="flex gap-5">
-            <FaFacebookF className="bg-white rounded-full p-3 text-black drop-shadow-md" />
-            <BsInstagram className="bg-white rounded-full p-3 text-black drop-shadow-md" />
-            <AiOutlineTwitter className="bg-white rounded-full p-3 text-black drop-shadow-md" />
+            <span className="p-3 bg-white rounded-full drop-shadow-md">
+              <FaFacebookF />
+            </span>
+            <span className="p-3 bg-white rounded-full drop-shadow-md">
+              <BsInstagram />
+            </span>
+            <span className="p-3 bg-white rounded-full drop-shadow-md">
+              <AiOutlineTwitter />
+            </span>
           </div>
         </article>
         <div className="flex gap-16">
