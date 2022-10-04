@@ -1,5 +1,6 @@
-import React from 'react'
-import { HiLocationMarker } from "react-icons/hi"
+import React from "react";
+import { DealsData } from "../utils/DealsData";
+import { HiLocationMarker } from "react-icons/hi";
 import hotelFour from "../assets/hotel4.png";
 import hotelTwo from "../assets/hotel2.png";
 import hotelThree from "../assets/hotel3.png";
@@ -8,6 +9,33 @@ import star from "../assets/review-star.png";
 const Hotels = () => {
   return (
     <section className="grid grid-cols-4 gap-6 font-text">
+      {DealsData.map((slideDeal, index) => {
+        return (
+          <article className="hover:shadow-2xl cursor-pointer hover:shadow-[#ffe7db]">
+            <img src={slideDeal.image} alt="Random Hotel"></img>
+            <div className="px-4 py-7 border-x-2 border-b-2 rounded-b-md hover:border-none">
+              <div className="flex justify-between pb-2">
+                <h4 className="font-bold text-lg">Madrid</h4>
+                <div className="flex items-center gap-2">
+                  <img src={star} alt="star icon" />
+                  <span className="text-text-light">4.8</span>
+                </div>
+              </div>
+              <div className="flex justify-between text-text-light">
+                <p className="flex items-center gap-[0.1rem]">
+                  <HiLocationMarker /> Spain
+                </p>
+                <p className="flex gap-2 items-center">
+                  <span className="line-through">$950</span>
+                  <span className="text-primary-o font-bold bg-[#ffe7db] rounded-md p-1">
+                    $850
+                  </span>
+                </p>
+              </div>
+            </div>
+          </article>
+        );
+      })}
       <article className="hover:shadow-2xl cursor-pointer hover:shadow-[#ffe7db]">
         <img src={hotelFour} alt="Random Hotel"></img>
         <div className="px-4 py-7 border-x-2 border-b-2 rounded-b-md hover:border-none">
@@ -102,6 +130,6 @@ const Hotels = () => {
       </article>
     </section>
   );
-}
+};
 
-export default Hotels
+export default Hotels;
