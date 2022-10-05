@@ -7,7 +7,7 @@ import star from "../assets/review-star.png";
 
 const Hotels = () => {
   return (
-    <section className="grid grid-cols-4 gap-6 font-text">
+    <section className="grid md:grid-cols-4 gap-6 font-text">
       <article className="hover:shadow-2xl cursor-pointer hover:shadow-[#ffe7db]">
         <img src={hotelFour} alt="Random Hotel"></img>
         <div className="px-4 py-7 border-x-2 border-b-2 rounded-b-md hover:border-none">

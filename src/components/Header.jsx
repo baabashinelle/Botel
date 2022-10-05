@@ -7,7 +7,7 @@ import trophyIcon from "../assets/trophy.png";
 const Header = () => {
   return (
     <section>
-      <div className="flex flex-row pl-16 justify-center items-center">
+      <div className="flex flex-col md:flex-row pl-16 justify-center items-center">
         <article className="w-[36rem]">
           <h1 className="text-[64px] font-semibold leading-none font-header tracking-wide">
             Get started your exciting

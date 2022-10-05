@@ -5,7 +5,7 @@ import Location from "../assets/location.png";
 
 const NecessaryCards = () => {
   return (
-    <section className="grid grid-cols-3 gap-5">
+    <section className="grid md:grid-cols-3 gap-5">
       <article className="bg-card-y bg-no-repeat w-96 h-[20rem] p-10">
         <div>
           <img src={formIcon} alt="Form icon" />
