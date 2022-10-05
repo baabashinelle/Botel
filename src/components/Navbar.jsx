@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from "../assets/logo.png"
-import { AiOutlineClose } from "react-icons/ai";
+import loginImg from "../assets/orange-login.jpg";
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
 
@@ -93,21 +93,29 @@ const Navbar = () => {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
-                <div className="flex">
+              <div className="inline-block max-w-[36rem] overflow-hidden text-left font-text align-middle transition-all transform bg-white shadow-xl rounded-md">
+                <div className="flex items-center justify-center">
                   <article>
-                    
+                    <img src={loginImg} alt="login" />
                   </article>
-                </div>
-
-                <div className="mt-4">
-                  <button
-                    type="button"
-                    className="inline-flex justify-center px-4 py-2 text-sm text-red-900 bg-red-100 border border-transparent rounded-md hover:bg-red-200 duration-300"
-                    onClick={closeModal}
-                  >
-                    <AiOutlineClose/>
-                  </button>
+                  <article className="flex flex-col gap-4 mx-4">
+                      <input
+                        type="text"
+                        placeholder="Username"
+                        className="p-2 border-2 rounded-md focus:outline-none focus:border-2"
+                      ></input>
+                    <input
+                      type="password"
+                      placeholder="Password"
+                      className="p-2 border-2 rounded-md focus:outline-none focus:border-2"
+                    ></input>
+                    <button className="bg-primary-o text-white rounded-md py-2">
+                      Submit
+                    </button>
+                    <p className="text-center text-gray-500 text-sm underline cursor-pointer">
+                      New user? Sign Up
+                    </p>
+                  </article>
                 </div>
               </div>
             </Transition.Child>
