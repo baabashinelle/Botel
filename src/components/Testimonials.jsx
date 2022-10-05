@@ -1,6 +1,6 @@
 import React from "react";
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
-import avatarImg from "../assets/avatar.JPG";
+import avatarImg from "../assets/avatar.jpg";
 
 const Testimonials = () => {
   return (
