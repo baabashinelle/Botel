@@ -45,14 +45,14 @@ const Navbar = () => {
         </article>
 
         <article className="gap-5 flex">
-          <button href="#" className="text-[#FD8D3A] font-bold">
-            Login
-          </button>
           <button
             type="button"
             onClick={openModal}
-            className="bg-bg-o text-white rounded-md w-[8rem] p-2 drop-shadow-xl font-bold"
+            className="text-[#FD8D3A] font-bold"
           >
+            Login
+          </button>
+          <button className="bg-bg-o text-white rounded-md w-[8rem] p-2 drop-shadow-xl font-bold">
             Sign up
           </button>
         </article>
@@ -99,11 +99,11 @@ const Navbar = () => {
                     <img src={loginImg} alt="login" />
                   </article>
                   <article className="flex flex-col gap-4 mx-4">
-                      <input
-                        type="text"
-                        placeholder="Username"
-                        className="p-2 border-2 rounded-md focus:outline-none focus:border-2"
-                      ></input>
+                    <input
+                      type="text"
+                      placeholder="Username"
+                      className="p-2 border-2 rounded-md focus:outline-none focus:border-2"
+                    ></input>
                     <input
                       type="password"
                       placeholder="Password"
