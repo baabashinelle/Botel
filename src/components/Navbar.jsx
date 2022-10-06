@@ -1,5 +1,6 @@
-import React from 'react'
-import logo from "../assets/logo.png"
+import React from "react";
+import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
 import loginImg from "../assets/orange-login.jpg";
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
@@ -52,6 +53,7 @@ const Navbar = () => {
           >
             Login
           </button>
+
           <button className="bg-bg-o text-white rounded-md w-[8rem] p-2 drop-shadow-xl font-bold">
             Sign up
           </button>
@@ -110,7 +112,7 @@ const Navbar = () => {
                       className="p-2 border-2 rounded-md focus:outline-none focus:border-2"
                     ></input>
                     <button className="bg-primary-o text-white rounded-md py-2">
-                      Submit
+                        <Link to="/dashboard">Submit</Link>
                     </button>
                     <p className="text-center text-gray-500 text-sm underline cursor-pointer">
                       New user? Sign Up
@@ -124,6 +126,6 @@ const Navbar = () => {
       </Transition>
     </nav>
   );
-}
+};
 
-export default Navbar
+export default Navbar;
