@@ -9,7 +9,7 @@ import { AiOutlineEye } from "react-icons/ai";
 
 const SideBar = () => {
   return (
-    <section className="w-[20%] min-h-screen bg-bg-c flex flex-col items-center font-text p-5 shadow-sm">
+    <section className="w-[20%] min-h-screen flex flex-col items-center font-text p-5 shadow-sm">
       {/*logo*/}
       <article className="flex justify-center items-center gap-2 w-full mb-[6rem]">
         <h3 className="text-2xl font-bold font-header">Botel</h3>
