@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { AiOutlineHome } from "react-icons/ai";
 import { MdOutlineAddBusiness } from "react-icons/md";
 import { AiOutlineEye } from "react-icons/ai";
-import { FiLogOut } from "react-icons/fi";
+// import { FiLogOut } from "react-icons/fi";
 
 const Dashboard = () => {
   return (
