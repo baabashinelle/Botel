@@ -59,7 +59,7 @@ const Blog = () => {
           <span className="text-primary-o"> latest blog</span>
         </h3>
       </article>
-      <article className="pt-12 w-full pl-16">
+      <article className="pt-12 w-[70%]">
         <AliceCarousel
           mouseTracking
           items={items}
