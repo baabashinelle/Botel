@@ -18,7 +18,7 @@ const SideBar = () => {
         </div>
       </article>
       <article>
-        <ul className="gap-5 flex flex-col text-primary-o text-lg">
+        <ul className="gap-5 flex flex-col text-[#5a3f31] text-lg">
           <li className="bg-[#ffe3d4] px-8 py-2 rounded-md">
             <Link className="flex items-center gap-4">
               <AiOutlineHome />
