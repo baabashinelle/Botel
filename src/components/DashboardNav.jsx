@@ -15,7 +15,6 @@ const DashboardNav = () => {
             alt="admin"
             className="h-full w-full rounded-full"
             layout="fill"
-            objectFit="cover"
           />
         </div>
       </div>
