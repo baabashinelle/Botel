@@ -2,26 +2,26 @@ const HotelItems = [
   {
     name: "Hotel de France",
     country: "France",
-    eventImg: "/assets/events.jpg",
-    status: "Open",
+    eventImg: "../assets/hotel1.png",
+    status: "Available",
   },
   {
     name: "Kempinski Hotel",
     country: "Ghana",
-    eventImg: "/assets/events2.jpg",
-    status: "Open",
+    eventImg: "../assets/hotel2.png",
+    status: "Unavailable",
   },
   {
     name: "Transcorp Hilton",
     country: "Nigeria",
-    eventImg: "/assets/events.jpg",
-    status: "Closed",
+    eventImg: "/assets/hotel3.png",
+    status: "Available",
   },
   {
     name: "The Ritz-Carlton",
     country: "Canada",
-    eventImg: "/assets/events2.jpg",
-    status: "Closed",
+    eventImg: "/assets/hotel4.png",
+    status: "Unavailable",
   },
 ];
 
