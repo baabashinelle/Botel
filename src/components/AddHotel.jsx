@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const AddHotel = () => {
   return (
     <div className='flex justify-center items-center'>
