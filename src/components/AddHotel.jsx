@@ -2,7 +2,9 @@ import React from 'react'
 
 const AddHotel = () => {
   return (
-    <div>AddHotel</div>
+    <div className='flex justify-center items-center'>
+        
+    </div>
   )
 }
 
