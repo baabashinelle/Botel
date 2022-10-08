@@ -1,13 +1,17 @@
-import React from 'react'
+import React from "react";
 import logo from "../assets/logo.png";
-import { Link } from "react-router-dom";
 import { AiOutlineHome } from "react-icons/ai";
 import { MdOutlineAddBusiness } from "react-icons/md";
 import { AiOutlineEye } from "react-icons/ai";
+import AddHotel from "./AddHotel";
+import Tabs from "./Tabs";
+import ViewHotels from "./ViewHotels";
 // import { FiLogOut } from "react-icons/fi";
 
-
-const SideBar = () => {
+const SideBar = ({ setPage }) => {
+  const moveTo = (page) => {
+    setPage(page);
+  };
   return (
     <section className="w-[20%] min-h-screen flex flex-col items-center font-text p-5 shadow-sm">
       {/*logo*/}
@@ -20,22 +24,31 @@ const SideBar = () => {
       <article>
         <ul className="gap-5 flex flex-col text-[#5a3f31] text-lg">
           <li className="bg-[#ffe3d4] px-8 py-2 rounded-md">
-            <Link className="flex items-center gap-4">
+            <div
+              className="flex items-center gap-4 cursor-pointer"
+              onClick={() => moveTo(Tabs)}
+            >
               <AiOutlineHome />
               Dashboard
-            </Link>
+            </div>
           </li>
           <li className="px-8 py-2 rounded-md">
-            <Link className="flex items-center gap-4">
+            <div
+              className="flex items-center gap-4 cursor-pointer"
+              onClick={() => moveTo(AddHotel)}
+            >
               <MdOutlineAddBusiness />
               Add Hotels
-            </Link>
+            </div>
           </li>
           <li className="px-8 py-2 rounded-md">
-            <Link className="flex items-center gap-4">
+            <div
+              className="flex items-center gap-4 cursor-pointer"
+              onClick={() => moveTo(ViewHotels)}
+            >
               <AiOutlineEye />
               View Hotels
-            </Link>
+            </div>
           </li>
         </ul>
       </article>
@@ -48,6 +61,6 @@ const SideBar = () => {
       </article> */}
     </section>
   );
-}
+};
 
-export default SideBar
+export default SideBar;
