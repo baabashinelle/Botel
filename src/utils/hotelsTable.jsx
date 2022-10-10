@@ -1,26 +1,31 @@
+import hotelFour from "../assets/hotel4.png";
+import hotelTwo from "../assets/hotel2.png";
+import hotelThree from "../assets/hotel3.png";
+import hotelOne from "../assets/hotel1.png";
+
 const HotelItems = [
   {
     name: "Hotel de France",
     country: "France",
-    hotelImg: "../assets/hotel1.png",
+    hotelImg: `${hotelOne}`,
     status: "Available",
   },
   {
     name: "Kempinski Hotel",
     country: "Ghana",
-    hotelImg: "../assets/hotel2.png",
+    hotelImg: `${hotelTwo}`,
     status: "Unavailable",
   },
   {
     name: "Transcorp Hilton",
     country: "Nigeria",
-    hotelImg: "../assets/hotel3.png",
+    hotelImg: `${hotelThree}`,
     status: "Available",
   },
   {
     name: "The Ritz-Carlton",
     country: "Canada",
-    hotelImg: "../assets/hotel4.png",
+    hotelImg: `${hotelFour}`,
     status: "Unavailable",
   },
 ];
