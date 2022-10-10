@@ -14,3 +14,17 @@
   max-width: fit-content!important;
   padding-right: 2rem!important;
 }
+ /* Hotel card button */
+ .hotel-btn{
+  opacity: 0;
+ }
+ 
+  .hotel-card:hover .hotel-btn{
+    opacity: 1;
+    z-index: 100;
+    transition: opacity 0.2s ease-in-out;
+  }
+  .hotel-card:hover > img{
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in-out;
+  }

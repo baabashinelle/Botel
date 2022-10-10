@@ -1,5 +1,5 @@
-import React from 'react'
-import { HiLocationMarker } from "react-icons/hi"
+import React from "react";
+import { HiLocationMarker } from "react-icons/hi";
 import hotelFour from "../assets/hotel4.png";
 import hotelTwo from "../assets/hotel2.png";
 import hotelThree from "../assets/hotel3.png";
@@ -31,7 +31,9 @@ const Hotels = () => {
           </div>
         </div>
       </article>
-      <article className="hover:shadow-2xl cursor-pointer hover:shadow-[#ffe7db]">
+      <article
+        className="relative cursor-pointer hover:shadow-2xl hover:shadow-[#ffe7db] hotel-card"
+      >
         <img src={hotelTwo} alt="Random Hotel"></img>
         <div className="px-4 py-7 border-x-2 border-b-2 rounded-b-md hover:border-none">
           <div className="flex justify-between pb-2">
@@ -52,6 +54,10 @@ const Hotels = () => {
               </span>
             </p>
           </div>
+
+          <button className="bg-bg-o text-white rounded-md w-[8rem] p-2 drop-shadow-xl absolute top-[50%] left-[25%] hotel-btn">
+            Book Now
+          </button>
         </div>
       </article>
       <article className="hover:shadow-2xl cursor-pointer hover:shadow-[#ffe7db]">
@@ -102,6 +108,6 @@ const Hotels = () => {
       </article>
     </section>
   );
-}
+};
 
-export default Hotels
+export default Hotels;
