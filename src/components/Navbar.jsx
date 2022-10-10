@@ -54,7 +54,10 @@ const Navbar = () => {
             Login
           </button>
 
-          <button className="bg-bg-o text-white rounded-md w-[8rem] p-2 drop-shadow-xl font-bold">
+          <button
+            onClick={openModal}
+            className="bg-bg-o text-white rounded-md w-[8rem] p-2 drop-shadow-xl font-bold"
+          >
             Sign up
           </button>
         </article>
@@ -70,7 +73,8 @@ const Navbar = () => {
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"
-              enterFr om="opacity-100"
+              enterFr
+              om="opacity-100"
               enterTo="opacity-100"
               leave="ease-in duration-200"
               leaveFrom="opacity-100"
@@ -112,7 +116,7 @@ const Navbar = () => {
                       className="p-2 border-2 rounded-md focus:outline-none focus:border-2"
                     ></input>
                     <button className="bg-primary-o text-white rounded-md py-2">
-                        <Link to="/dashboard">Submit</Link>
+                      <Link to="/dashboard">Submit</Link>
                     </button>
                     <p className="text-center text-gray-500 text-sm underline cursor-pointer">
                       New user? Sign Up
