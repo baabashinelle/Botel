@@ -13,19 +13,19 @@ const RoomItems = [
   {
     name: "Kempinski Hotel",
     country: "Ghana",
-    hotelImg: `${hotelOne}`,
+    hotelImg: `${hotelTwo}`,
     status: "Unavailable",
   },
   {
     name: "Transcorp Hilton",
     country: "Nigeria",
-    hotelImg: `${hotelOne}`,
+    hotelImg: `${hotelThree}`,
     status: "Available",
   },
   {
     name: "The Ritz-Carlton",
     country: "Canada",
-    hotelImg: `${hotelOne}`,
+    hotelImg: `${hotelFour}`,
     status: "Unavailable",
   },
 ];

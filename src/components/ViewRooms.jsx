@@ -6,9 +6,9 @@ import { AiOutlineEye, AiOutlineEdit, AiOutlineDelete } from "react-icons/ai";
 const RoomItem = ({ hotelImg, name, country, status }) => (
   <article className="flex justify-between items-center py-[1em] border-b-2 ">
     <div className="flex items-center gap-6 w-[20%]">
-      <img src={hotelImg} className="w-14 h-14 rounded-md" />
+      <img src={hotelImg} className="w-[5rem] h-[5rem] rounded-md" />
       <div>
-        <h3 className="font-bold">{name}</h3>
+        <h3 className="w-[20ch] font-bold">{name}</h3>
         <p className="text-xs text-gray-400">{country}</p>
       </div>
     </div>
