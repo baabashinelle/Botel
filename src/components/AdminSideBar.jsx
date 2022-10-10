@@ -1,17 +1,15 @@
-import React from 'react'
+import React from "react";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import { AiOutlineHome } from "react-icons/ai";
 import { MdOutlineAddBusiness } from "react-icons/md";
 import { AiOutlineEye } from "react-icons/ai";
-import AddHotel from "./AddHotel";
+import AddHotels from "./AddHotels";
 import Tabs from "./Tabs";
 import ViewHotels from "./ViewHotels";
 
-
-
 const AdminSideBar = ({ setPage }) => {
-    const moveTo = (page) => {
+  const moveTo = (page) => {
     setPage(page);
   };
   return (
@@ -39,7 +37,7 @@ const AdminSideBar = ({ setPage }) => {
           <li className="px-8 py-2 rounded-md">
             <div
               className="flex items-center gap-4 cursor-pointer"
-              onClick={() => moveTo(AddHotel)}
+              onClick={() => moveTo(AddHotels)}
             >
               <MdOutlineAddBusiness />
               Add Hotels
@@ -65,6 +63,6 @@ const AdminSideBar = ({ setPage }) => {
       </article> */}
     </section>
   );
-}
+};
 
-export default AdminSideBar
+export default AdminSideBar;

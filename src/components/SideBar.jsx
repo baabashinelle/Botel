@@ -3,7 +3,7 @@ import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import { AiOutlineHome } from "react-icons/ai";
 import { AiOutlineEye } from "react-icons/ai";
-import AddHotel from "./AddHotel";
+import ViewRooms from "./ViewRooms";
 import Tabs from "./Tabs";
 import ViewHotels from "./ViewHotels";
 // import { FiLogOut } from "react-icons/fi";
@@ -37,7 +37,7 @@ const SideBar = ({ setPage }) => {
           <li className="px-8 py-2 rounded-md">
             <div
               className="flex items-center gap-4 cursor-pointer"
-              onClick={() => moveTo(AddHotel)}
+              onClick={() => moveTo(ViewRooms)}
             >
               <AiOutlineEye />
               View Rooms
