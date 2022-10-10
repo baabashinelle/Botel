@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { HiLocationMarker } from "react-icons/hi";
 import hotelFour from "../assets/hotel4.png";
 import hotelTwo from "../assets/hotel2.png";
@@ -31,9 +32,7 @@ const Hotels = () => {
           </div>
         </div>
       </article>
-      <article
-        className="relative cursor-pointer hover:shadow-2xl hover:shadow-[#ffe7db] hotel-card"
-      >
+      <article className="relative cursor-pointer hover:shadow-2xl hover:shadow-[#ffe7db] hotel-card">
         <img src={hotelTwo} alt="Random Hotel"></img>
         <div className="px-4 py-7 border-x-2 border-b-2 rounded-b-md hover:border-none">
           <div className="flex justify-between pb-2">
@@ -56,7 +55,7 @@ const Hotels = () => {
           </div>
 
           <button className="bg-bg-o text-white rounded-md w-[8rem] p-2 drop-shadow-xl absolute top-[50%] left-[25%] hotel-btn">
-            Book Now
+            <Link to='/dashboard'>Book Now</Link>
           </button>
         </div>
       </article>

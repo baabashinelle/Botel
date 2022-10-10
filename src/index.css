@@ -25,6 +25,6 @@
     transition: opacity 0.2s ease-in-out;
   }
   .hotel-card:hover > img{
-    opacity: 0.8;
+    opacity: 0.9;
     transition: opacity 0.2s ease-in-out;
   }
