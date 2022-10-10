@@ -40,8 +40,8 @@ const SideBar = ({ setPage }) => {
               className="flex items-center gap-4 cursor-pointer"
               onClick={() => moveTo(AddHotel)}
             >
-              <MdOutlineAddBusiness />
-              Add Hotels
+              <AiOutlineEye />
+              View Rooms
             </div>
           </li>
           <li className="px-8 py-2 rounded-md">
