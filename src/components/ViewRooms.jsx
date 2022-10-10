@@ -3,10 +3,10 @@ import RoomItems from "../utils/roomsTable";
 import { AiOutlineEye, AiOutlineEdit, AiOutlineDelete } from "react-icons/ai";
 
 
-const RoomItem = ({ hotelImg, name, country, status }) => (
+const RoomItem = ({ roomImg, name, country, status }) => (
   <article className="flex justify-between items-center py-[1em] border-b-2 ">
     <div className="flex items-center gap-6 w-[20%]">
-      <img src={hotelImg} className="w-[5rem] h-[5rem] rounded-md" />
+      <img src={roomImg} className="w-[5rem] h-[5rem] rounded-md" />
       <div>
         <h3 className="w-[20ch] font-bold">{name}</h3>
         <p className="text-xs text-gray-400">{country}</p>
@@ -28,7 +28,7 @@ const ViewRooms = () => {
       <h1 className="border-b-2 font-bold text-lg pb-[0.8em]">All Rooms</h1>
       {RoomItems.map((item, index) => (
         <RoomItem
-          hotelImg={item.hotelImg}
+          roomImg={item.roomImg}
           name={item.name}
           country={item.country}
           status={item.status}

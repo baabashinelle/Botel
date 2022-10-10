@@ -1,31 +1,31 @@
-import hotelFour from "../assets/hotel4.png";
-import hotelTwo from "../assets/hotel2.png";
-import hotelThree from "../assets/hotel3.png";
-import hotelOne from "../assets/hotel1.png";
+import roomFour from "../assets/room1.jpg";
+import roomTwo from "../assets/room2.jpg";
+import roomThree from "../assets/room3.jpg";
+import roomOne from "../assets/room4.jpg";
 
 const RoomItems = [
   {
     name: "Hotel de France",
     country: "France",
-    hotelImg: `${hotelOne}`,
+    roomImg: `${roomOne}`,
     status: "Available",
   },
   {
     name: "Kempinski Hotel",
     country: "Ghana",
-    hotelImg: `${hotelTwo}`,
+    roomImg: `${roomTwo}`,
     status: "Unavailable",
   },
   {
     name: "Transcorp Hilton",
     country: "Nigeria",
-    hotelImg: `${hotelThree}`,
+    roomImg: `${roomThree}`,
     status: "Available",
   },
   {
     name: "The Ritz-Carlton",
     country: "Canada",
-    hotelImg: `${hotelFour}`,
+    roomImg: `${roomFour}`,
     status: "Unavailable",
   },
 ];
