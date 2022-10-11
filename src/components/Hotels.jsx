@@ -48,7 +48,7 @@ const Hotels = () => {
       </article>
       <article className="relative cursor-pointer hover:shadow-2xl hover:shadow-[#ffe7db] hotel-card">
         <img src={hotelTwo} alt="Random Hotel"></img>
-        <div className="px-4 py-7 border-x-2 border-b-2 rounded-b-md hover:border-none">
+        <div className="px-4 py-7 border-x-2 border-b-2 rounded-b-md hover:border-none transition-all">
           <div className="flex justify-between pb-2">
             <h4 className="font-bold text-lg">Paris</h4>
             <div className="flex items-center gap-2">
