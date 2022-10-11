@@ -1,10 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
-import loginImg from "../assets/orange-login.jpg";
-import { Dialog, Transition } from "@headlessui/react";
-import { Fragment, useState } from "react";
-import MyModal from "./TryModal";
+import {  useState } from "react";
+import MyModal from "./MainModal";
 import ModalDesign from "./ModalDesign";
 
 const Navbar = () => {
