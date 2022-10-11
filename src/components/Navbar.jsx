@@ -1,9 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
-import loginImg from "../assets/orange-login.jpg";
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
+import NavModal from "./NavModal";
 
 const Navbar = () => {
   let [isOpen, setIsOpen] = useState(false);
@@ -100,29 +99,7 @@ const Navbar = () => {
               leaveTo="opacity-0 scale-95"
             >
               <div className="inline-block max-w-[36rem] overflow-hidden text-left font-text align-middle transition-all transform bg-white shadow-xl rounded-md">
-                <div className="flex items-center justify-center">
-                  <article>
-                    <img src={loginImg} alt="login" />
-                  </article>
-                  <article className="flex flex-col gap-4 mx-4">
-                    <input
-                      type="text"
-                      placeholder="Username"
-                      className="p-2 border-2 rounded-md focus:outline-none focus:border-2"
-                    ></input>
-                    <input
-                      type="password"
-                      placeholder="Password"
-                      className="p-2 border-2 rounded-md focus:outline-none focus:border-2"
-                    ></input>
-                    <button className="bg-primary-o text-white rounded-md py-2">
-                      <Link to="/dashboard">Submit</Link>
-                    </button>
-                    <p className="text-center text-gray-500 text-sm underline cursor-pointer">
-                      New user? Sign Up
-                    </p>
-                  </article>
-                </div>
+                <NavModal/>
               </div>
             </Transition.Child>
           </div>
