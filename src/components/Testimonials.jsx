@@ -5,12 +5,12 @@ import avatarImg from "../assets/avatar.jpg";
 const Testimonials = () => {
   return (
     <section className="bg-bg-off flex flex-col md:flex-row justify-center items-center gap-16 pt-24 pb-20 font-text">
-      <div className="relative after:content-[url('./assets/planes.png')] after:block after:absolute after:-right-[45em] after:-top-[4em]">
+      <div className="relative md:after:content-[url('./assets/planes.png')] after:block after:absolute after:-right-[45em] after:-top-[4em]">
         <article>
-          <h3 className="font-header font-bold text-primary-b text-4xl">
+          <h3 className="font-header font-bold text-primary-b md:text-4xl text-3xl">
             What people say <span className="text-primary-o">about us.</span>
           </h3>
-          <p className="text-text-light font-text text-lg w-[30rem] pt-10 pb-14">
+          <p className="text-text-light font-text text-lg md:w-[30rem] w-[25rem] pt-10 pb-14">
             Our Clients send us bunch of smilies with our services and we love
             them.
           </p>
@@ -32,7 +32,7 @@ const Testimonials = () => {
             className="rounded-full w-16 h-16"
           ></img>
         </article>
-        <article className="bg-white py-5 px-8 rounded-lg w-[30rem] z-10 drop-shadow-md">
+        <article className="bg-white py-5 px-8 rounded-lg md:w-[30rem] w-[20rem] z-10 drop-shadow-md">
           <p className="text-base">
             “On the Windows talking painted pasture yet its express parties use.
             Sure last upon he same as knew next. Of believed or diverted no.”
@@ -42,7 +42,7 @@ const Testimonials = () => {
             <p className="text-xs">Lahore, Pakistan</p>
           </p>
         </article>
-        <article className="bg-white py-5 px-8 rounded-lg w-[30rem] opacity-50 -mt-24 ml-10 drop-shadow-xl">
+        <article className="bg-white py-5 px-8 rounded-lg md:w-[30rem] w-[20rem] opacity-50 md:-mt-24 -mt-32 ml-10 drop-shadow-xl">
           <p className="text-base">
             “On the Windows talking painted pasture yet its express parties use.
             Sure last upon he same as knew next. Of believed or diverted no.”
