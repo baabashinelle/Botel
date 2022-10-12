@@ -1,8 +1,9 @@
 import React from "react";
 import logo from "../assets/logo.png";
-import {  useState } from "react";
+import { useState } from "react";
 import MyModal from "./MainModal";
 import ModalDesign from "./ModalDesign";
+import { AiOutlineClose, AiOutlineBars } from "react-icons/ai";
 
 const Navbar = () => {
   let [isOpen, setIsOpen] = useState(false);
@@ -15,6 +16,43 @@ const Navbar = () => {
     setIsOpen(true);
   }
 
+  const [showMenu, setShowMenu] = useState(false);
+
+  let menu;
+
+  if (showMenu) {
+    menu = (
+      <div className="text-white w-full top-0 left-0 h-screen fixed bg-emerald-900 flex flex-col gap-8 text-lg font-text animate-slide-in">
+        <div className="flex justify-between px-[1em] pb-[0.8em] mt-[1.5em] mb-[3em] border-b border-gray-500">
+          <article className="flex flex-row items-center gap-2">
+            <h3 className="text-2xl font-bold font-header">Botel</h3>
+            <div>
+              <img src={logo} alt="Botel Logo" />
+            </div>
+          </article>
+          <AiOutlineClose onClick={() => setShowMenu(false)} />
+        </div>
+        <ul className="flex flex-row gap-6">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Destination</a>
+          </li>
+          <li>
+            <a href="#">Tour</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+        </ul>
+      </div>
+    );
+  }
+
   return (
     <nav className="pt-6 font-text">
       <div className="flex justify-around items-center">
@@ -24,7 +62,7 @@ const Navbar = () => {
             <img src={logo} alt="Botel Logo" />
           </div>
         </article>
-        <article>
+        <article className="hidden md:inline-block">
           <ul className="flex flex-row gap-6">
             <li>
               <a href="#">Home</a>
@@ -44,6 +82,10 @@ const Navbar = () => {
           </ul>
         </article>
 
+        <span className="md:hidden text-lg">
+          <AiOutlineBars onClick={() => setShowMenu(true)} />
+        </span>
+
         <article className="gap-5 flex">
           <button
             type="button"
@@ -53,11 +95,11 @@ const Navbar = () => {
             Login
           </button>
 
-          <MyModal Design={ModalDesign}/>
+          <MyModal Design={ModalDesign} />
         </article>
       </div>
 
-      
+      {menu}
     </nav>
   );
 };
