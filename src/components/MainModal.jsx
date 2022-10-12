@@ -16,7 +16,7 @@ export default function MyModal({ Design }) {
   return (
     <>
       <div className=" inset-0 flex items-center justify-center">
-        <ModalSignUp openModal={openModal} />
+        <ModalSignUp openModal={openModal}/>
       </div>
 
       <Transition appear show={isOpen} as={Fragment}>

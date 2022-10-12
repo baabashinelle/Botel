@@ -1,5 +1,8 @@
 import React from 'react'
 import RoomItems from "../utils/roomsTable";
+import MyModal from "./MainModal";
+import ModalDesign from "./ModalDesign";
+import ViewModalDesign from './ViewModalDesign';
 import { AiOutlineEye, AiOutlineEdit, AiOutlineDelete } from "react-icons/ai";
 
 
@@ -14,6 +17,7 @@ const RoomItem = ({ roomImg, name, country, status }) => (
     </div>
     <div className="text-gray-500">{status}</div>
     <div className="flex gap-4 cursor-pointer">
+      <MyModal Design={ViewModalDesign} />
       <AiOutlineEye className="hover:text-gray-600 hover:scale-125" />
       <AiOutlineEdit className="hover:text-gray-600 hover:scale-125" />
       <AiOutlineDelete className="hover:text-gray-600 hover:scale-125" />
