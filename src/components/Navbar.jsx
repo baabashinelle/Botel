@@ -22,17 +22,20 @@ const Navbar = () => {
 
   if (showMenu) {
     menu = (
-      <div className="text-white w-full top-0 left-0 h-screen fixed bg-emerald-900 flex flex-col gap-8 text-lg font-text animate-slide-in">
-        <div className="flex justify-between px-[1em] pb-[0.8em] mt-[1.5em] mb-[3em] border-b border-gray-500">
+      <div className="w-full top-0 left-0 h-screen fixed bg-bg-c flex flex-col gap-8 text-lg font-text animate-slide-in">
+        <div className="flex justify-between px-[1em] pb-[0.8em] mt-[1.5em] mb-[1em] border-b border-gray-300">
           <article className="flex flex-row items-center gap-2">
             <h3 className="text-2xl font-bold font-header">Botel</h3>
             <div>
               <img src={logo} alt="Botel Logo" />
             </div>
           </article>
-          <AiOutlineClose onClick={() => setShowMenu(false)} />
+          <AiOutlineClose
+            onClick={() => setShowMenu(false)}
+            className="cursor-pointer"
+          />
         </div>
-        <ul className="flex flex-row gap-6">
+        <ul className="flex flex-col gap-6 text-center">
           <li>
             <a href="#">Home</a>
           </li>
@@ -49,6 +52,17 @@ const Navbar = () => {
             <a href="#">Blog</a>
           </li>
         </ul>
+        <article className="gap-5 flex flex-col">
+          <button
+            type="button"
+            onClick={openModal}
+            className="text-[#FD8D3A] font-bold"
+          >
+            Login
+          </button>
+
+          <MyModal Design={ModalDesign} />
+        </article>
       </div>
     );
   }
@@ -83,10 +97,13 @@ const Navbar = () => {
         </article>
 
         <span className="md:hidden text-lg">
-          <AiOutlineBars onClick={() => setShowMenu(true)} />
+          <AiOutlineBars
+            onClick={() => setShowMenu(true)}
+            className="cursor-pointer"
+          />
         </span>
 
-        <article className="gap-5 flex">
+        <article className="gap-5 hidden md:flex">
           <button
             type="button"
             onClick={openModal}
