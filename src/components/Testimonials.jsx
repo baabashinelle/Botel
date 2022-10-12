@@ -15,7 +15,7 @@ const Testimonials = () => {
             them.
           </p>
         </article>
-        <article className="flex text-3xl gap-5">
+        <article className="flex justify-center md:justify-start text-3xl gap-5">
           <div className="border-2 rounded-full text-gray-400 cursor-pointer bg-white">
             <BsArrowLeftShort />
           </div>

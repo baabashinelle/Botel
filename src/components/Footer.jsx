@@ -7,8 +7,8 @@ import { AiOutlineTwitter } from "react-icons/ai";
 const Footer = () => {
   return (
     <footer className="bg-bg-off flex flex-col gap-14 pt-[18rem] pb-14 font-text">
-      <section className="flex md:flex-row flex-col justify-center">
-        <article className="flex flex-col gap-3 basis-1/3">
+      <section className="flex md:flex-row flex-col justify-center pl-10 md:pl-0">
+        <article className="flex flex-col gap-3 md:basis-1/3">
           <div className="flex flex-row items-center gap-2">
             <h3 className="text-2xl font-bold font-header">Botel</h3>
             <div>
@@ -18,7 +18,7 @@ const Footer = () => {
           <p className="w-[30ch] pb-2">
             Book your stay in minutes, get full control for much longer.
           </p>
-          <div className="flex gap-5">
+          <div className="flex gap-5 pb-14 md:pb-0">
             <span className="p-3 bg-white rounded-full drop-shadow-md hover:bg-primary-o hover:text-white hover:cursor-pointer transition-colors">
               <FaFacebookF />
             </span>
@@ -30,7 +30,7 @@ const Footer = () => {
             </span>
           </div>
         </article>
-        <div className="flex gap-16">
+        <div className="flex md:flex-row flex-col gap-16">
           <article className="flex flex-col gap-3 text-gray-400">
             <h3 className="font-bold pb-2 text-black">Company</h3>
             <p>About</p>
@@ -54,7 +54,7 @@ const Footer = () => {
       </section>
 
       {/* Lower Footer */}
-      <section className="flex justify-center px-[19rem]">
+      <section className="flex justify-center md:px-[19rem] px-[2rem] text-sm md:text-base">
         <article className="flex justify-between text-gray-400 border-t-2 w-full pt-8">
           <p>Copyright, Botel 2022. All rights reserved.</p>
           <p>Terms &amp; Conditions</p>
