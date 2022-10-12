@@ -22,7 +22,7 @@ const Navbar = () => {
 
   if (showMenu) {
     menu = (
-      <div className="w-full top-0 left-0 h-screen fixed bg-bg-c flex flex-col gap-8 text-lg font-text animate-slide-in">
+      <div className="w-full top-0 left-0 h-screen fixed bg-bg-c flex flex-col gap-8 text-lg font-text animate-slide-in z-50">
         <div className="flex justify-between px-[1em] pb-[0.8em] mt-[1.5em] mb-[1em] border-b border-gray-300">
           <article className="flex flex-row items-center gap-2">
             <h3 className="text-2xl font-bold font-header">Botel</h3>
