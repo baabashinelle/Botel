@@ -1,9 +1,7 @@
 import React from 'react'
 
 const ViewModal = () => {
-  return (
-    <div>ViewModal</div>
-  )
+  return <div className="flex items-center justify-center">ViewModal</div>;
 }
 
 export default ViewModal
