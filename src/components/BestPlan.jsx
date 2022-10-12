@@ -6,7 +6,7 @@ const BestPlan = () => {
   return (
     <div className="bg-bg-c flex flex-col justify-center items-center pt-24 pb-20">
       <article>
-        <h3 className="font-header font-bold text-primary-b text-center text-4xl relative after:content-[url('./assets/trees.png')] after:block after:absolute after:left-[13em] after:-top-[0.3em]">
+        <h3 className="font-header font-bold text-primary-b text-center text-4xl relative md:after:content-[url('./assets/trees.png')] after:block after:absolute after:left-[13em] after:-top-[0.3em]">
           Best
           <span className="text-primary-o"> vacation plan</span>
         </h3>
