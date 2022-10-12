@@ -1,19 +1,15 @@
 import React from 'react'
+import RoomImg from "../assets/room1.jpg";
 
 const ViewModalDesign = () => {
   return (
-    <div className="flex items-center justify-center">
-      <article className="flex flex-col gap-4 mx-4">
-        <input
-          type="text"
-          placeholder="Username"
-          className="p-2 border-2 rounded-md focus:outline-none focus:border-2"
-        ></input>
-        <input
-          type="password"
-          placeholder="Password"
-          className="p-2 border-2 rounded-md focus:outline-none focus:border-2"
-        ></input>
+    <div className="flex justify-center px-8 py-8 gap-8">
+      <article>
+        <img src={RoomImg} alt="Room" />
+      </article>
+      <article className="flex flex-col gap-3 mx-4">
+        <h3 className='font-bold text-lg'>Description</h3>
+        <p className='w-[18ch]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus tempore autem necessitatibus.</p>
       </article>
     </div>
   );
