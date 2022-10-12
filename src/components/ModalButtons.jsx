@@ -13,6 +13,11 @@ export const ModalSignUp = ({openModal}) => {
 }
 
 export const ModalView = ({openModal}) => {
-  return <AiOutlineEye className="hover:text-gray-600 hover:scale-125" />;
+  return (
+    <AiOutlineEye
+      className="hover:text-gray-600 hover:scale-125"
+      onClick={openModal}
+    />
+  );
 }
 

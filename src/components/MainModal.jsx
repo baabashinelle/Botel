@@ -1,9 +1,12 @@
+import { useLocation } from "react-router-dom"
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
-import { ModalSignUp } from "./ModalButtons";
+import { ModalSignUp, ModalView } from "./ModalButtons";
+
 
 export default function MyModal({ Design }) {
   let [isOpen, setIsOpen] = useState(false);
+const { pathname } = useLocation();
 
   function closeModal() {
     setIsOpen(false);
@@ -15,9 +18,15 @@ export default function MyModal({ Design }) {
 
   return (
     <>
-      <div className=" inset-0 flex items-center justify-center">
-        <ModalSignUp openModal={openModal}/>
-      </div>
+      {pathname === "/dashboard" ? (
+        <ModalView
+          openModal={openModal}
+        />
+      ) : (
+        <div className=" inset-0 flex items-center justify-center">
+          <ModalSignUp openModal={openModal} />
+        </div>
+      )}
 
       <Transition appear show={isOpen} as={Fragment}>
         <Dialog

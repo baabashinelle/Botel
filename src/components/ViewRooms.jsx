@@ -16,8 +16,7 @@ const RoomItem = ({ roomImg, name, country, status }) => (
     </div>
     <div className="text-gray-500">{status}</div>
     <div className="flex gap-4 cursor-pointer">
-      <MyModal Design={ViewModalDesign} />
-      <AiOutlineEye className="hover:text-gray-600 hover:scale-125" />
+      <MyModal Design={ViewModalDesign}/>
       <AiOutlineEdit className="hover:text-gray-600 hover:scale-125" />
       <AiOutlineDelete className="hover:text-gray-600 hover:scale-125" />
     </div>
