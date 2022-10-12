@@ -1,7 +1,6 @@
 import React from 'react'
 import RoomItems from "../utils/roomsTable";
 import MyModal from "./MainModal";
-import ModalDesign from "./ModalDesign";
 import ViewModalDesign from './ViewModalDesign';
 import { AiOutlineEye, AiOutlineEdit, AiOutlineDelete } from "react-icons/ai";
 

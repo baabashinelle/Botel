@@ -1,4 +1,5 @@
 import React from 'react'
+import { AiOutlineEye } from "react-icons/ai";
 
 export const ModalSignUp = ({openModal}) => {
   return (
@@ -9,5 +10,9 @@ export const ModalSignUp = ({openModal}) => {
       Sign up
     </button>
   );
+}
+
+export const ModalView = ({openModal}) => {
+  return <AiOutlineEye className="hover:text-gray-600 hover:scale-125" />;
 }
 
