@@ -69,7 +69,7 @@ const Navbar = () => {
 
   return (
     <nav className="pt-6 font-text">
-      <div className="flex justify-around items-center">
+      <div className="flex md:justify-around justify-between px-5 md:px-0 items-center">
         <article className="flex flex-row items-center gap-2">
           <h3 className="text-2xl font-bold font-header">Botel</h3>
           <div>
