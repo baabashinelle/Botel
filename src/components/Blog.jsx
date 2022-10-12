@@ -54,12 +54,12 @@ const Blog = () => {
   return (
     <section className="bg-bg-c flex flex-col justify-center items-center pt-24 pb-20 font-text">
       <article>
-        <h3 className="font-header font-bold text-primary-b text-center text-4xl">
+        <h3 className="font-header font-bold text-primary-b text-center md:text-4xl text-3xl">
           Get update with
           <span className="text-primary-o"> latest blog</span>
         </h3>
       </article>
-      <article className="pt-12 w-[70%]">
+      <article className="pt-12 md:w-[70%] w-[55%]">
         <AliceCarousel
           mouseTracking
           items={items}
