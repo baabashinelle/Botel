@@ -3,7 +3,7 @@ import RoomImg from "../assets/room1.jpg";
 
 const ViewModalDesign = () => {
   return (
-    <div className="flex flex-col justify-center px-10 py-7">
+    <div className="flex flex-col justify-center px-10 py-10">
       <article>
         <img src={RoomImg} alt="Room" />
       </article>
