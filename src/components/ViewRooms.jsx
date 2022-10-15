@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import RoomItems from "../utils/roomsTable";
 import Modal from "./Modal";
 import ViewModalDesign from "./ViewModalDesign";
-import { AiOutlineEye, AiOutlineEdit, AiOutlineDelete } from "react-icons/ai";
+import { AiOutlineEye } from "react-icons/ai";
+import { MdOutlineBookmarkAdded } from "react-icons/md";
 
 const RoomItem = ({ roomImg, name, country, status }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenView, setIsOpenView] = useState(false);
-  const [isOpenEdit, setIsOpenEdit] = useState(false);
-  const [isOpenDelete, setIsOpenDelete] = useState(false);
+  const [isOpenBook, setIsOpenBook] = useState(false);
+  
 
   return (
     <article className="flex justify-between items-center py-[1em] border-b-2 ">
@@ -39,12 +40,8 @@ const RoomItem = ({ roomImg, name, country, status }) => {
           onClick={() => setIsOpenView(true)}
           className="hover:text-gray-600 hover:scale-125"
         />
-        <AiOutlineEdit
-          onClick={() => setIsOpen(true)}
-          className="hover:text-gray-600 hover:scale-125"
-        />
-        <AiOutlineDelete
-          onClick={() => setIsOpen(true)}
+        <MdOutlineBookmarkAdded
+          onClick={() => setIsOpenView(true)}
           className="hover:text-gray-600 hover:scale-125"
         />
       </div>

@@ -1,30 +1,51 @@
-import React from 'react'
+import React, { useState } from "react";
 import HotelItems from "../utils/hotelsTable";
-import { AiOutlineEye, AiOutlineEdit, AiOutlineDelete } from "react-icons/ai";
+import Modal from "./Modal";
+import ViewModalDesign from "./ViewModalDesign";
+import { AiOutlineEye } from "react-icons/ai";
+import { MdOutlineBookmarkAdded } from "react-icons/md";
 
-const HotelItem = ({ hotelImg, name, country, status }) => (
-  <article className="flex justify-between items-center py-[1em] border-b-2 ">
-    <div className="flex items-center gap-6 w-[20%]">
-      <img src={hotelImg} className="w-[5rem] h-[5rem] rounded-md" />
-      <div>
-        <h3 className="font-bold w-[20ch]">{name}</h3>
-        <p className="text-xs text-gray-400">{country}</p>
+const HotelItem = ({ hotelImg, name, country, status }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isOpenView, setIsOpenView] = useState(false);
+  const [isOpenBook, setIsOpenBook] = useState(false);
+  return (
+    <article className="flex justify-between items-center py-[1em] border-b-2 ">
+      <div className="flex items-center gap-6 w-[20%]">
+        <img src={hotelImg} className="w-[5rem] h-[5rem] rounded-md" />
+        <div>
+          <h3 className="font-bold w-[20ch]">{name}</h3>
+          <p className="text-xs text-gray-400">{country}</p>
+        </div>
       </div>
-    </div>
-    <div>
-      {status == "Available" ? (
-        <div className="bg-green-200 text-green-700 py-1 px-3">{status}</div>
-      ) : (
-        <div className="bg-red-200 text-red-700 py-1 px-3">{status}</div>
-      )}
-    </div>
-    <div className="flex gap-4 cursor-pointer">
-      <AiOutlineEye className="hover:text-gray-600 hover:scale-125" />
-      <AiOutlineEdit className="hover:text-gray-600 hover:scale-125" />
-      <AiOutlineDelete className="hover:text-gray-600 hover:scale-125" />
-    </div>
-  </article>
-);
+      <div>
+        {status == "Available" ? (
+          <div className="bg-green-200 text-green-700 py-1 px-3">{status}</div>
+        ) : (
+          <div className="bg-red-200 text-red-700 py-1 px-3">{status}</div>
+        )}
+      </div>
+      <div className="flex gap-4 cursor-pointer">
+        {isOpenView && (
+          <Modal
+            isOpen={isOpenView}
+            handleCloseModal={() => setIsOpenView(false)}
+            Design={ViewModalDesign}
+          />
+        )}
+
+        <AiOutlineEye
+          onClick={() => setIsOpenView(true)}
+          className="hover:text-gray-600 hover:scale-125"
+        />
+        <MdOutlineBookmarkAdded
+          onClick={() => setIsOpenView(true)}
+          className="hover:text-gray-600 hover:scale-125"
+        />
+      </div>
+    </article>
+  );
+};
 
 const ViewHotels = () => {
   return (
@@ -41,6 +62,6 @@ const ViewHotels = () => {
       ))}
     </div>
   );
-}
+};
 
-export default ViewHotels
+export default ViewHotels;
