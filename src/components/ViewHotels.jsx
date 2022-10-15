@@ -13,9 +13,9 @@ const HotelItem = ({ hotelImg, name, country, status }) => (
     </div>
     <div>
       {status == "Available" ? (
-        <div className="bg-green-300 text-green-700 py-1 px-3">{status}</div>
+        <div className="bg-green-200 text-green-700 py-1 px-3">{status}</div>
       ) : (
-        <div className="bg-red-300 text-red-700 py-1 px-3">{status}</div>
+        <div className="bg-red-200 text-red-700 py-1 px-3">{status}</div>
       )}
     </div>
     <div className="flex gap-4 cursor-pointer">
