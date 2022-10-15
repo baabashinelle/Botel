@@ -9,6 +9,7 @@ const HotelItem = ({ hotelImg, name, country, status }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenView, setIsOpenView] = useState(false);
   const [isOpenBook, setIsOpenBook] = useState(false);
+  
   return (
     <article className="flex justify-between items-center py-[1em] border-b-2 ">
       <div className="flex items-center gap-6 w-[20%]">
