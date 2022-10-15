@@ -55,7 +55,6 @@ const Navbar = () => {
         <article className="gap-5 flex flex-col">
           <button
             type="button"
-            onClick={openModal}
             className="text-[#FD8D3A] font-bold"
           >
             Login

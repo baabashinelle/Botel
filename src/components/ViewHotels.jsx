@@ -11,7 +11,13 @@ const HotelItem = ({ hotelImg, name, country, status }) => (
         <p className="text-xs text-gray-400">{country}</p>
       </div>
     </div>
-    <div className="text-gray-500">{status}</div>
+    <div>
+      {status == "Available" ? (
+        <div className="bg-green-300 text-green-700 py-1 px-3">{status}</div>
+      ) : (
+        <div className="bg-red-300 text-red-700 py-1 px-3">{status}</div>
+      )}
+    </div>
     <div className="flex gap-4 cursor-pointer">
       <AiOutlineEye className="hover:text-gray-600 hover:scale-125" />
       <AiOutlineEdit className="hover:text-gray-600 hover:scale-125" />

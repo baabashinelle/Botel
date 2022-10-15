@@ -1,28 +1,56 @@
-import React from 'react'
+import React, { useState } from "react";
 import RoomItems from "../utils/roomsTable";
-import MyModal from "./MainModal";
-import ViewModalDesign from './ViewModalDesign';
+import Modal from "./Modal";
+import ViewModalDesign from "./ViewModalDesign";
 import { AiOutlineEye, AiOutlineEdit, AiOutlineDelete } from "react-icons/ai";
 
+const RoomItem = ({ roomImg, name, country, status }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isOpenView, setIsOpenView] = useState(false);
+  const [isOpenEdit, setIsOpenEdit] = useState(false);
+  const [isOpenDelete, setIsOpenDelete] = useState(false);
 
-const RoomItem = ({ roomImg, name, country, status }) => (
-  <article className="flex justify-between items-center py-[1em] border-b-2 ">
-    <div className="flex items-center gap-6 w-[20%]">
-      <img src={roomImg} className="w-[5rem] h-[5rem] rounded-md" />
-      <div>
-        <h3 className="w-[20ch] font-bold">{name}</h3>
-        <p className="text-xs text-gray-400">{country}</p>
+  return (
+    <article className="flex justify-between items-center py-[1em] border-b-2 ">
+      <div className="flex items-center gap-6 w-[20%]">
+        <img src={roomImg} className="w-[5rem] h-[5rem] rounded-md" />
+        <div>
+          <h3 className="w-[20ch] font-bold">{name}</h3>
+          <p className="text-xs text-gray-400">{country}</p>
+        </div>
       </div>
-    </div>
-    <div className="text-gray-500">{status}</div>
-    <div className="flex gap-4 cursor-pointer">
-      <MyModal Design={ViewModalDesign}/>
-      <AiOutlineEdit className="hover:text-gray-600 hover:scale-125" />
-      <AiOutlineDelete className="hover:text-gray-600 hover:scale-125" />
-    </div>
-  </article>
-);
+      <div>
+        {status == "Available" ? (
+          <div className="bg-green-300 text-green-700 py-1 px-3">{status}</div>
+        ) : (
+          <div className="bg-red-300 text-red-700 py-1 px-3">{status}</div>
+        )}
+      </div>
+      <div className="flex gap-4 cursor-pointer">
+        {isOpenView && (
+          <Modal
+            isOpen={isOpenView}
+            handleCloseModal={() => setIsOpenView(false)}
+            Design={ViewModalDesign}
+          />
+        )}
 
+        <AiOutlineEye
+          onClick={() => setIsOpenView(true)}
+          className="hover:text-gray-600 hover:scale-125"
+        />
+        <AiOutlineEdit
+          onClick={() => setIsOpen(true)}
+          className="hover:text-gray-600 hover:scale-125"
+        />
+        <AiOutlineDelete
+          onClick={() => setIsOpen(true)}
+          className="hover:text-gray-600 hover:scale-125"
+        />
+      </div>
+    </article>
+  );
+};
 
 const ViewRooms = () => {
   return (
@@ -39,6 +67,6 @@ const ViewRooms = () => {
       ))}
     </div>
   );
-}
+};
 
-export default ViewRooms
+export default ViewRooms;

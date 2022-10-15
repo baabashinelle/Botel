@@ -1,50 +1,17 @@
-import { useLocation } from "react-router-dom"
+import React , {useState} from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import { Fragment, useState } from "react";
-import { ModalSignUp } from "./ModalButtons";
-import { AiOutlineEye, AiOutlineEdit, AiOutlineDelete } from "react-icons/ai";
+import { Fragment } from "react";
 
-
-export default function MyModal({ Design }) {
-  let [isOpen, setIsOpen] = useState(false);
-const { pathname } = useLocation();
-
-  function closeModal() {
-    setIsOpen(false);
-  }
-
-  function openModal() {
-    setIsOpen(true);
-  }
+const Modal = ({ Design, isOpen, handleCloseModal }) => {
+  const [isClose, setIsClose] = useState(false);
 
   return (
     <>
-      {pathname === "/dashboard" ? (
-        <ModalSignUp openModal={openModal}>
-          <div className="flex gap-4 cursor-pointer">
-            <AiOutlineEye className="hover:text-gray-600 hover:scale-125" />
-            <AiOutlineEdit className="hover:text-gray-600 hover:scale-125" />
-            <AiOutlineDelete className="hover:text-gray-600 hover:scale-125" />
-          </div>
-        </ModalSignUp>
-      ) : (
-        <div className=" inset-0 flex items-center justify-center">
-          <ModalSignUp openModal={openModal}>
-            <button
-              onClick={openModal}
-              className="bg-bg-o text-white rounded-md w-[8rem] p-2 drop-shadow-xl font-bold"
-            >
-              Sign up
-            </button>
-          </ModalSignUp>
-        </div>
-      )}
-
       <Transition appear show={isOpen} as={Fragment}>
         <Dialog
           as="div"
           className="fixed inset-0 z-10 overflow-y-auto"
-          onClose={closeModal}
+          onClose={handleCloseModal}
         >
           <div className="min-h-screen px-4 text-center">
             <Transition.Child
@@ -85,4 +52,6 @@ const { pathname } = useLocation();
       </Transition>
     </>
   );
-}
+};
+
+export default Modal;
