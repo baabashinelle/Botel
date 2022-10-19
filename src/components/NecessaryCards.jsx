@@ -6,7 +6,7 @@ import Location from "../assets/location.png";
 const NecessaryCards = () => {
   return (
     <section className="grid md:grid-cols-3 gap-5">
-      <article className="bg-card-y bg-no-repeat w-96 h-[20rem] p-10">
+      <article className="bg-card-y bg-no-repeat md:w-96 h-[20rem] p-10">
         <div>
           <img src={formIcon} alt="Form icon" />
         </div>
@@ -18,7 +18,7 @@ const NecessaryCards = () => {
         </div>
       </article>
 
-      <article className="bg-card-b bg-no-repeat w-96 h-[20rem] p-10">
+      <article className="bg-card-b bg-no-repeat md:w-96 h-[20rem] p-10">
         <div>
           <img src={Wallet} alt="Wallet icon" />
         </div>
@@ -32,7 +32,7 @@ const NecessaryCards = () => {
         </div>
       </article>
 
-      <article className="bg-card-y bg-no-repeat w-96 h-[20rem] p-10">
+      <article className="bg-card-y bg-no-repeat md:w-96 h-[20rem] p-10">
         <div>
           <img src={Location} alt="Location icon" />
         </div>

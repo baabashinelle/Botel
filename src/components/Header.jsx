@@ -1,5 +1,6 @@
 import React from "react";
 import travelMan from "../assets/man.png";
+import travelManMobile from "../assets/travel-man.png";
 import mapIcon from "../assets/map.png";
 import starIcon from "../assets/star.png";
 import trophyIcon from "../assets/trophy.png";
@@ -9,11 +10,11 @@ const Header = () => {
     <section>
       <div className="flex flex-col md:flex-row md:pl-16 pl-10 justify-center items-center">
         <article className="md:w-[36rem]">
-          <h1 className="pt-14 md:pt-0 md:text-[64px] text-[40px] font-semibold md:leading-none leading-tight font-header tracking-wide">
+          <h1 className="pt-14 md:pt-0 md:text-[64px] sm:text-[40px] text-[35px] font-semibold md:leading-none leading-tight font-header tracking-wide">
             Get started your exciting
             <span className="text-primary-o"> Stay</span> with us.
           </h1>
-          <p className="md:text-xl text-lg text-text-light md:w-[30rem] pt-10 pb-10 font-text md:leading-9">
+          <p className="md:text-xl sm:text-lg text-text-light md:w-[30rem] pt-10 pb-10 font-text md:leading-9">
             A Team of experienced tourism professionals will provide you with
             the best advice and tips for your desire place.
           </p>
@@ -24,7 +25,7 @@ const Header = () => {
           </div>
         </article>
 
-        <article className="grid grid-cols-custom grid-rows-custom font-text content-center">
+        <article className="grid-cols-custom grid-rows-custom font-text content-center hidden sm:grid">
           <div className="md:w-[45rem] w-[28rem] col-start-1 col-end-9 row-start-1 row-end-8">
             <img src={travelMan} alt="Happy Man Ready To Travel" />
           </div>
@@ -46,6 +47,11 @@ const Header = () => {
               <p>Explore the World</p>
             </div>
           </div>
+        </article>
+
+        {/* For mobile screens */}
+        <article className="sm:hidden block pt-10 pb-16">
+          <img src={travelManMobile}  alt="man"/>
         </article>
       </div>
     </section>
