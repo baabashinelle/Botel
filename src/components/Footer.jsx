@@ -55,7 +55,7 @@ const Footer = () => {
 
       {/* Lower Footer */}
       <section className="flex justify-center md:px-[19rem] px-[2rem] text-sm md:text-base">
-        <article className="flex justify-between text-gray-400 border-t-2 w-full pt-8">
+        <article className="flex flex-col gap-3 sm:gap-0 text-center sm:text-left sm:flex-row justify-between text-gray-400 border-t-2 w-full pt-8">
           <p>Copyright, Botel 2022. All rights reserved.</p>
           <p>Terms &amp; Conditions</p>
         </article>
