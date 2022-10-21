@@ -8,7 +8,7 @@ const LoginPage = () => {
       <article className="w-1/2">
         <img src={loginImg} alt="login" />
       </article>
-      <article className="flex flex-col gap-4 w-1/4">
+      <article className="flex flex-col gap-4 w-2/6">
         <h1 className="text-4xl font-header font-bold">Login to Botel</h1>
         <label>Username</label>
         <input
