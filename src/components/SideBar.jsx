@@ -3,15 +3,10 @@ import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import { AiOutlineHome } from "react-icons/ai";
 import { AiOutlineEye } from "react-icons/ai";
-import ViewRooms from "./ViewRooms";
-import Tabs from "./Tabs";
-import ViewHotels from "./ViewHotels";
 // import { FiLogOut } from "react-icons/fi";
 
-const SideBar = ({ setPage }) => {
-  const moveTo = (page) => {
-    setPage(page);
-  };
+const SideBar = () => {
+
   return (
     <section className="w-[20%] min-h-screen flex flex-col items-center font-text p-5 shadow-sm">
       {/*logo*/}
@@ -28,28 +23,27 @@ const SideBar = ({ setPage }) => {
           <li className="bg-[#ffe3d4] px-8 py-2 rounded-md">
             <div
               className="flex items-center gap-4 cursor-pointer"
-              onClick={() => moveTo(Tabs)}
+      
             >
               <AiOutlineHome />
-              Dashboard
+              <Link to={"/dashboardhome"}>Dashboard</Link>
             </div>
           </li>
           <li className="px-8 py-2 rounded-md">
             <div
               className="flex items-center gap-4 cursor-pointer"
-              onClick={() => moveTo(ViewRooms)}
+              
             >
               <AiOutlineEye />
-              View Rooms
+              <Link to={"/viewrooms"}>View Rooms</Link>
             </div>
           </li>
           <li className="px-8 py-2 rounded-md">
             <div
               className="flex items-center gap-4 cursor-pointer"
-              onClick={() => moveTo(ViewHotels)}
             >
               <AiOutlineEye />
-              View Hotels
+              <Link to={"/viewhotels"}>View Hotels</Link>
             </div>
           </li>
         </ul>

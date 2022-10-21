@@ -4,6 +4,7 @@ import Modal from "./Modal";
 import ViewModalDesign from "./ViewModalDesign";
 import { AiOutlineEye } from "react-icons/ai";
 import { MdOutlineBookmarkAdded } from "react-icons/md";
+import Dashboard from "../components/Dashboard";
 
 const HotelItem = ({ hotelImg, name, country, status }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,18 +51,20 @@ const HotelItem = ({ hotelImg, name, country, status }) => {
 
 const ViewHotels = () => {
   return (
-    <div className="flex flex-col justify-center bg-white font-text px-[2em] py-[1em] m-[2em] rounded-lg">
-      <h1 className="border-b-2 font-bold text-lg pb-[0.8em]">All Hotels</h1>
-      {HotelItems.map((item, index) => (
-        <HotelItem
-          hotelImg={item.hotelImg}
-          name={item.name}
-          country={item.country}
-          status={item.status}
-          key={index}
-        />
-      ))}
-    </div>
+    <Dashboard>
+      <div className="flex flex-col justify-center bg-white font-text px-[2em] py-[1em] m-[2em] rounded-lg">
+        <h1 className="border-b-2 font-bold text-lg pb-[0.8em]">All Hotels</h1>
+        {HotelItems.map((item, index) => (
+          <HotelItem
+            hotelImg={item.hotelImg}
+            name={item.name}
+            country={item.country}
+            status={item.status}
+            key={index}
+          />
+        ))}
+      </div>
+    </Dashboard>
   );
 };
 

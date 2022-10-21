@@ -1,23 +1,11 @@
 import React from "react";
 import logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 import { useState } from "react";
-import MyModal from "./MainModal";
-import ModalDesign from "./ModalDesign";
 import { AiOutlineClose, AiOutlineBars } from "react-icons/ai";
 
 const Navbar = () => {
-  let [isOpen, setIsOpen] = useState(false);
-
-  function closeModal() {
-    setIsOpen(false);
-  }
-
-  function openModal() {
-    setIsOpen(true);
-  }
-
   const [showMenu, setShowMenu] = useState(false);
-
   let menu;
 
   if (showMenu) {
@@ -52,15 +40,14 @@ const Navbar = () => {
             <a href="#">Blog</a>
           </li>
         </ul>
-        <article className="gap-5 flex flex-col">
-          <button
-            type="button"
-            className="text-[#FD8D3A] font-bold"
-          >
+        <article className="gap-5 flex flex-col items-center">
+          <button type="button" className="text-[#FD8D3A] font-bold">
             Login
           </button>
 
-          <MyModal Design={ModalDesign} />
+          <button className="bg-bg-o text-white rounded-md w-[8rem] p-2 drop-shadow-xl font-bold">
+            Sign up
+          </button>
         </article>
       </div>
     );
@@ -103,15 +90,12 @@ const Navbar = () => {
         </span>
 
         <article className="gap-5 hidden md:flex">
-          <button
-            type="button"
-            onClick={openModal}
-            className="text-[#FD8D3A] font-bold"
-          >
-            Login
+          <button type="button" className="text-[#FD8D3A] font-bold">
+            <Link to="/login">Login</Link>
           </button>
-
-          <MyModal Design={ModalDesign} />
+          <button className="bg-bg-o text-white rounded-md w-[8rem] p-2 drop-shadow-xl font-bold">
+            <Link to="/login">Sign up</Link>
+          </button>
         </article>
       </div>
 
