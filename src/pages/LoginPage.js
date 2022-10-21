@@ -20,7 +20,7 @@ const LoginPage = () => {
           type="password"
           className="p-2 border-2 rounded-md focus:outline-none focus:border-2"
         ></input>
-        <button className="bg-primary-o text-white rounded-md py-2 mt-5">
+        <button className="bg-primary-o text-white rounded-md py-3 mt-5">
           <Link to="/dashboardhome">Submit</Link>
         </button>
       </article>
