@@ -14,6 +14,10 @@
   max-width: fit-content!important;
   padding-right: 2rem!important;
 }
+.deals-carousel .alice-carousel__stage-item{
+  width: unset!important;
+}
+/* Deals Carousel */
  /* Hotel card button */
  .hotel-btn{
   opacity: 0;
