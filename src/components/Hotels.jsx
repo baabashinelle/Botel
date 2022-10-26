@@ -59,7 +59,7 @@ const Hotels = () => {
         controlsStrategy="responsive"
         renderPrevButton={() => {
           return (
-            <article className="flex justify-center items-center pt-10">
+            <article className="flex justify-center items-center pt-10 z-10 w-fit">
               <div className="border-2 rounded-full text-gray-400 cursor-pointer w-8 h-8 flex justify-center items-center text-3xl">
                 <BsArrowLeftShort />
               </div>
@@ -68,7 +68,7 @@ const Hotels = () => {
         }}
         renderNextButton={() => {
           return (
-            <article className="flex justify-center items-center pt-10">
+            <article className="flex justify-center items-center pt-10 -ml-[31rem] w-fit">
               <div className="rounded-full bg-primary-o border-2 border-primary-o text-white cursor-pointer w-8 h-8 flex justify-center items-center text-3xl">
                 <BsArrowRightShort />
               </div>
