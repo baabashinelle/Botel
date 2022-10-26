@@ -51,7 +51,7 @@ const items = HotelData.map((hotel) => {
 
 const Hotels = () => {
   return (
-    <section className="grid gap-6 font-text deals-carousel overflow-hidden">
+    <section className="font-text deals-carousel relative">
       <AliceCarousel
         mouseTracking
         items={items}
@@ -59,7 +59,7 @@ const Hotels = () => {
         controlsStrategy="responsive"
         renderPrevButton={() => {
           return (
-            <article className="flex justify-center items-center pt-10 z-10 w-fit">
+            <article className="flex justify-center items-center pt-10 z-10 w-fit absolute left-[46%] -bottom-10">
               <div className="border-2 rounded-full text-gray-400 cursor-pointer w-8 h-8 flex justify-center items-center text-3xl">
                 <BsArrowLeftShort />
               </div>
@@ -68,7 +68,7 @@ const Hotels = () => {
         }}
         renderNextButton={() => {
           return (
-            <article className="flex justify-center items-center pt-10 -ml-[31rem] w-fit">
+            <article className="flex justify-center items-center pt-10 w-fit absolute right-[46%] -bottom-10">
               <div className="rounded-full bg-primary-o border-2 border-primary-o text-white cursor-pointer w-8 h-8 flex justify-center items-center text-3xl">
                 <BsArrowRightShort />
               </div>
