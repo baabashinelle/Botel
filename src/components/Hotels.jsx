@@ -9,8 +9,8 @@ import star from "../assets/review-star.png";
 
 const responsive = {
   0: { items: 1 },
-  568: { items: 2 },
-  1024: { items: 3 },
+  567: { items: 2 },
+  1023: { items: 3 },
 };
 
 const items = HotelData.map((hotel) => {
@@ -60,7 +60,7 @@ const Hotels = () => {
         renderPrevButton={() => {
           return (
             <article className="flex justify-center items-center pt-10 z-10 w-fit absolute left-[46%] -bottom-10">
-              <div className="border-2 rounded-full text-gray-400 cursor-pointer w-8 h-8 flex justify-center items-center text-3xl">
+              <div className="border-2 rounded-full text-gray-400 cursor-pointer w-8 h-8 flex justify-center items-center text-3xl ">
                 <BsArrowLeftShort />
               </div>
             </article>

@@ -17,7 +17,9 @@
 .deals-carousel .alice-carousel__stage-item{
   width: unset!important;
 }
-
+/* .alice-carousel__next-btn-item.__inactive{
+  background-color: red!important;
+} */
 
 @media screen and (max-width: 600px) {
   .deals-carousel .alice-carousel__stage-item{
