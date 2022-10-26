@@ -17,6 +17,20 @@
 .deals-carousel .alice-carousel__stage-item{
   width: unset!important;
 }
+ .alice-carousel__next-btn-item.__inactive{
+  background-color: #fa7436!important;
+  color: white;
+}
+ .alice-carousel__prev-btn-item.__inactive{
+  background-color: red!important;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .deals-carousel .alice-carousel__stage-item{
+  width: 100%!important;
+}
+}
 /* Deals Carousel */
  /* Hotel card button */
  .hotel-btn{
