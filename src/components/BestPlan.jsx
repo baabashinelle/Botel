@@ -1,5 +1,5 @@
 import React from 'react'
-import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
+// import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
 import Hotels from './Hotels';
 
 const BestPlan = () => {
@@ -15,14 +15,14 @@ const BestPlan = () => {
           hundreds of all-inclusive offers!
         </p>
       </article>
-      <article className="flex gap-5 md:justify-end justify-center w-full md:pr-[12rem] pb-8 text-3xl">
+      {/* <article className="flex gap-5 md:justify-end justify-center w-full md:pr-[12rem] pb-8 text-3xl">
         <div className="border-2 rounded-full text-gray-400 cursor-pointer">
           <BsArrowLeftShort />
         </div>
         <div className="rounded-full bg-primary-o border-2 border-primary-o text-white cursor-pointer">
           <BsArrowRightShort />
         </div>
-      </article>
+      </article> */}
       <article>
         <Hotels />
       </article>

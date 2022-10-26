@@ -1,6 +1,6 @@
 import React from 'react'
 import Hotels from './Hotels'
-import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
+// import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
 
 
 const Deals = () => {
@@ -19,14 +19,14 @@ const Deals = () => {
       <article>
         <Hotels />
       </article>
-      <article className="flex pt-10 text-3xl gap-5">
+      {/* <article className="flex pt-10 text-3xl gap-5">
         <div className="border-2 rounded-full text-gray-400 cursor-pointer">
           <BsArrowLeftShort />
         </div>
         <div className="rounded-full bg-primary-o border-2 border-primary-o text-white cursor-pointer">
           <BsArrowRightShort />
         </div>
-      </article>
+      </article> */}
     </div>
   );
 }
