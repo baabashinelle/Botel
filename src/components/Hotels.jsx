@@ -9,7 +9,7 @@ import star from "../assets/review-star.png";
 
 const responsive = {
   0: { items: 1 },
-  568: { items: 3 },
+  568: { items: 2 },
   1024: { items: 3 },
 };
 
