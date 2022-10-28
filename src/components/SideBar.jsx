@@ -10,7 +10,7 @@ const SideBar = () => {
   return (
     <section className="w-[20%] min-h-screen flex flex-col items-center font-text p-5 shadow-sm">
       {/*logo*/}
-      <article className="flex justify-center items-center gap-2 w-full mb-[6rem]">
+      <article className="flex justify-center items-center gap-2 w-full mb-[6rem] pt-2">
         <h3 className="text-2xl font-bold font-header">
           <Link to="/">Botel</Link>
         </h3>
