@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const LoginPage = () => {
   return (
     <div className="flex items-center gap-16 h-screen overflow-y-hidden font-text">
-      <article className="w-4/5 h-full">
+      <article className="w-5/6 h-full">
         <img src={loginImg} alt="login" />
       </article>
       <article className='flex justify-center w-full'>
