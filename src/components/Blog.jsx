@@ -52,9 +52,9 @@ const items = [
 
 const Blog = () => {
   return (
-    <section className="bg-bg-c flex flex-col justify-center items-center pt-24 pb-20 font-text">
+    <section className="bg-bg-c flex flex-col justify-center items-center pt-24 pb-20 p-3 md:p-0 font-text">
       <article>
-        <h3 className="font-header font-bold text-primary-b text-center md:text-4xl sm:text-3xl text-2xl ">
+        <h3 className="font-header font-bold text-primary-b text-center md:text-4xl sm:text-3xl text-2xl md:pt-16 xl:pt-16">
           Get update with
           <span className="text-primary-o"> latest blog</span>
         </h3>

@@ -11,7 +11,6 @@ const HotelData = [
     rating: "4.8",
     newPrice: "$850",
     oldPrice: "$950",
-    value: "1",
   },
   {
     hotelImg: `${hotelTwo}`,
@@ -20,7 +19,6 @@ const HotelData = [
     rating: "4.8",
     newPrice: "$850",
     oldPrice: "$950",
-    value: "2",
   },
   {
     hotelImg: `${hotelFour}`,
@@ -29,7 +27,6 @@ const HotelData = [
     rating: "4.8",
     newPrice: "$850",
     oldPrice: "$950",
-    value: "3",
   },
   {
     hotelImg: `${hotelThree}`,
@@ -38,16 +35,6 @@ const HotelData = [
     rating: "4.8",
     newPrice: "$850",
     oldPrice: "$950",
-    value: "4",
-  },
-  {
-    hotelImg: `${hotelFour}`,
-    city: "Madrid",
-    country: "Spain",
-    rating: "4.8",
-    newPrice: "$850",
-    oldPrice: "$950",
-    value: "5",
   },
 ];
 

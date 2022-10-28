@@ -8,25 +8,25 @@ import trophyIcon from "../assets/trophy.png";
 const Header = () => {
   return (
     <section>
-      <div className="flex flex-col md:flex-row md:pl-16 pl-10 justify-center items-center">
+      <div className="flex flex-col lg:flex-row lg:pl-16 xl:pl-24 pl-5 justify-center items-center">
         <article className="md:w-[36rem]">
-          <h1 className="pt-14 md:pt-0 md:text-[64px] sm:text-[40px] text-[35px] font-semibold md:leading-none leading-tight font-header tracking-wide">
+          <h1 className="pt-14 md:pt-14 2xl:pt-0 xl:text-[64px] md:text-[54px] sm:text-[40px] text-[35px] font-semibold md:leading-none leading-tight font-header tracking-wide">
             Get started your exciting
             <span className="text-primary-o"> Stay</span> with us.
           </h1>
-          <p className="md:text-xl sm:text-lg text-text-light md:w-[30rem] pt-10 pb-10 font-text md:leading-9">
+          <p className="md:text-xl lg:text-lg sm:text-lg text-text-light md:w-[30rem] pt-10 pb-10 font-text md:leading-9">
             A Team of experienced tourism professionals will provide you with
             the best advice and tips for your desire place.
           </p>
           <div>
-            <button className="w-[10rem] p-3 font-text rounded-md bg-white font-semibold text-primary-o border-primary-o border-[1px]">
+            <button className="md:w-[10rem] p-3 font-text rounded-md bg-white font-semibold text-primary-o border-primary-o border-[1px]">
               Discover Now
             </button>
           </div>
         </article>
 
         <article className="grid-cols-custom grid-rows-custom font-text content-center hidden sm:grid">
-          <div className="md:w-[45rem] w-[28rem] col-start-1 col-end-9 row-start-1 row-end-8">
+          <div className="md:w-[45rem] lg:w-[30rem] xl:w-[45rem] w-[28rem] col-start-1 col-end-9 row-start-1 row-end-8">
             <img src={travelMan} alt="Happy Man Ready To Travel" />
           </div>
           <div className="col-start-1 col-end-3 row-start-3 row-end-4">

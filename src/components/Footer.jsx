@@ -6,8 +6,8 @@ import { AiOutlineTwitter } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <footer className="bg-bg-off flex flex-col gap-14 pt-[18rem] pb-14 font-text">
-      <section className="flex md:flex-row flex-col justify-center pl-10 md:pl-0">
+    <footer className="bg-bg-off flex flex-col gap-14 md:pt-[18rem] pt-10 pb-14 font-text">
+      <section className="flex md:flex-row flex-col justify-center px-10 md:px-0">
         <article className="flex flex-col gap-3 md:basis-1/3">
           <div className="flex flex-row items-center gap-2">
             <h3 className="text-2xl font-bold font-header">Botel</h3>
@@ -15,7 +15,7 @@ const Footer = () => {
               <img src={logo} alt="Botel Logo" />
             </div>
           </div>
-          <p className="w-[30ch] pb-2">
+          <p className="md:w-[30ch] pb-2">
             Book your stay in minutes, get full control for much longer.
           </p>
           <div className="flex gap-5 pb-14 md:pb-0">
@@ -54,7 +54,7 @@ const Footer = () => {
       </section>
 
       {/* Lower Footer */}
-      <section className="flex justify-center md:px-[19rem] px-[2rem] text-sm md:text-base">
+      <section className="flex justify-center xl:px-[19rem] px-[2rem] text-sm md:text-base">
         <article className="flex flex-col gap-3 sm:gap-0 text-center sm:text-left sm:flex-row justify-between text-gray-400 border-t-2 w-full pt-8">
           <p>Copyright, Botel 2022. All rights reserved.</p>
           <p>Terms &amp; Conditions</p>

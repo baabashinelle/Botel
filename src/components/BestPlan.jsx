@@ -10,7 +10,7 @@ const BestPlan = () => {
           Best
           <span className="text-primary-o"> vacation plan</span>
         </h3>
-        <p className="text-text-light font-text text-center md:text-lg lg:w-[30rem] md:w-[25rem] pt-10 pb-14">
+        <p className="text-text-light font-text text-center md:text-lg lg:w-[30rem] md:w-[25rem] pt-10 md:pb-14 pb-8">
           Plan your perfect vacation with our travel agency. Choose among
           hundreds of all-inclusive offers!
         </p>

@@ -3,39 +3,43 @@ import HotelData from "../utils/hotels";
 import { Link } from "react-router-dom";
 import { HiLocationMarker } from "react-icons/hi";
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
-import AliceCarousel from "react-alice-carousel";
-import "react-alice-carousel/lib/alice-carousel.css";
+import {
+  CarouselProvider,
+  Slider,
+  Slide,
+  ButtonBack,
+  ButtonNext,
+} from "pure-react-carousel";
+import "pure-react-carousel/dist/react-carousel.es.css";
 import star from "../assets/review-star.png";
 
-const responsive = {
-  0: { items: 1 },
-  567: { items: 2 },
-  1023: { items: 3 },
-};
-
-const items = HotelData.map((hotel) => {
+const HotelCarousel = ({
+  city,
+  hotelImg,
+  rating,
+  country,
+  oldPrice,
+  newPrice,
+}) => {
   return (
-    <article
-      className="relative cursor-pointer hover:shadow-2xl hover:shadow-[#ffe7db] hotel-card item w-full transition-all"
-      data-value={`${hotel.value}`}
-    >
-      <img src={hotel.hotelImg} alt="Random Hotel"></img>
+    <article className="w-fit relative cursor-pointer hover:shadow-2xl hover:shadow-[#ffe7db] hotel-card transition-all">
+      <img src={hotelImg} alt="Random Hotel"></img>
       <div className="px-4 py-7 border-x-2 border-b-2 rounded-b-md transition-all">
         <div className="flex justify-between pb-2">
-          <h4 className="font-bold text-lg">{hotel.city}</h4>
+          <h4 className="font-bold text-lg">{city}</h4>
           <div className="flex items-center gap-2">
             <img src={star} alt="star icon" />
-            <span className="text-text-light">{hotel.rating}</span>
+            <span className="text-text-light">{rating}</span>
           </div>
         </div>
         <div className="flex justify-between text-text-light">
           <p className="flex items-center gap-[0.1rem]">
-            <HiLocationMarker /> {hotel.country}
+            <HiLocationMarker /> {country}
           </p>
           <p className="flex gap-2 items-center">
-            <span className="line-through">{hotel.oldPrice}</span>
+            <span className="line-through">{oldPrice}</span>
             <span className="text-primary-o font-bold bg-[#ffe7db] rounded-md p-1">
-              {hotel.newPrice}
+              {newPrice}
             </span>
           </p>
         </div>
@@ -46,39 +50,110 @@ const items = HotelData.map((hotel) => {
       </div>
     </article>
   );
-});
-
+};
 
 const Hotels = () => {
   return (
-    <section className="font-text deals-carousel relative">
-      <AliceCarousel
-        mouseTracking
-        items={items}
-        responsive={responsive}
-        controlsStrategy="responsive"
-        renderPrevButton={() => {
-          return (
-            <article className="flex justify-center items-center pt-10 z-10 w-fit absolute left-[46%] -bottom-10">
+    <>
+      <section className="font-text md:flex justify-center items-center hidden">
+        <CarouselProvider isIntrinsicHeight={true} totalSlides={2}>
+          <Slider>
+            <Slide index={0} tabIndex="null">
+              <div className="grid md:grid-cols-carousel gap-8 justify-center">
+                {HotelData.map((item, index) => (
+                  <HotelCarousel
+                    hotelImg={item.hotelImg}
+                    key={index}
+                    city={item.city}
+                    country={item.country}
+                    rating={item.rating}
+                    oldPrice={item.oldPrice}
+                    newPrice={item.newPrice}
+                  />
+                ))}
+              </div>
+            </Slide>
+            <Slide index={1}>
+              <div className="grid md:grid-cols-carousel gap-8 justify-center">
+                {HotelData.map((item, index) => (
+                  <HotelCarousel
+                    hotelImg={item.hotelImg}
+                    key={index}
+                    city={item.city}
+                    country={item.country}
+                    rating={item.rating}
+                    oldPrice={item.oldPrice}
+                    newPrice={item.newPrice}
+                  />
+                ))}
+              </div>
+            </Slide>
+          </Slider>
+          <div className="flex justify-center gap-8 pt-10">
+            <ButtonBack>
               <div className="border-2 rounded-full text-gray-400 cursor-pointer w-8 h-8 flex justify-center items-center text-3xl ">
                 <BsArrowLeftShort />
               </div>
-            </article>
-          );
-        }}
-        renderNextButton={() => {
-          return (
-            <article className="flex justify-center items-center pt-10 w-fit absolute right-[46%] -bottom-10">
+            </ButtonBack>
+            <ButtonNext>
               <div className="rounded-full bg-primary-o border-2 border-primary-o text-white cursor-pointer w-8 h-8 flex justify-center items-center text-3xl">
                 <BsArrowRightShort />
               </div>
-            </article>
-          );
-        }}
-        disableDotsControls={true}
-        swipeExtraPadding={0}
-      />
-    </section>
+            </ButtonNext>
+          </div>
+        </CarouselProvider>
+      </section>
+
+      {/* for mobile */}
+      <section className="font-text md:hidden flex justify-center items-center">
+        <CarouselProvider isIntrinsicHeight={true} totalSlides={2}>
+          <Slider>
+            <Slide index={0} tabIndex="null">
+              <div className="grid md:grid-cols-carousel gap-8 justify-center">
+                {HotelData.map((item, index) => (
+                  <HotelCarousel
+                    hotelImg={item.hotelImg}
+                    key={index}
+                    city={item.city}
+                    country={item.country}
+                    rating={item.rating}
+                    oldPrice={item.oldPrice}
+                    newPrice={item.newPrice}
+                  />
+                ))}
+              </div>
+            </Slide>
+            <Slide index={1}>
+              <div className="grid md:grid-cols-carousel gap-8 justify-center">
+                {HotelData.map((item, index) => (
+                  <HotelCarousel
+                    hotelImg={item.hotelImg}
+                    key={index}
+                    city={item.city}
+                    country={item.country}
+                    rating={item.rating}
+                    oldPrice={item.oldPrice}
+                    newPrice={item.newPrice}
+                  />
+                ))}
+              </div>
+            </Slide>
+          </Slider>
+          <div className="flex justify-center gap-8 pt-10">
+            <ButtonBack>
+              <div className="border-2 rounded-full text-gray-400 cursor-pointer w-8 h-8 flex justify-center items-center text-3xl ">
+                <BsArrowLeftShort />
+              </div>
+            </ButtonBack>
+            <ButtonNext>
+              <div className="rounded-full bg-primary-o border-2 border-primary-o text-white cursor-pointer w-8 h-8 flex justify-center items-center text-3xl">
+                <BsArrowRightShort />
+              </div>
+            </ButtonNext>
+          </div>
+        </CarouselProvider>
+      </section>
+    </>
   );
 };
 

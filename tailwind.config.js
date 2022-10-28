@@ -30,6 +30,7 @@ module.exports = {
       },
       gridTemplateColumns: {
         custom: "repeat(8, 10.5%)",
+        carousel: "repeat(4, minmax(0, 15rem))",
       },
       gridTemplateRows: {
         custom: "repeat(7, 10.5%)",
