@@ -27,6 +27,7 @@ module.exports = {
         "card-o": "url('./assets/bgLineO.png')",
         "card-b": "url('./assets/bgLineB.png')",
         "card-y": "url('./assets/bgLineY.png')",
+        login: "url('./assets/orange-login.jpg')",
       },
       gridTemplateColumns: {
         custom: "repeat(8, 10.5%)",
