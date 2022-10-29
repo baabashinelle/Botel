@@ -11,7 +11,7 @@ const HotelItem = ({ hotelImg, name, country, status }) => {
   
   return (
     <article className="flex justify-between items-center py-[1em] border-b-2 ">
-      <div className="flex items-center gap-6 w-[20%]">
+      <div className="flex items-center gap-6 md:w-[20%]">
         <img src={hotelImg} className="w-[5rem] h-[5rem] rounded-md" />
         <div>
           <h3 className="font-bold w-[20ch]">{name}</h3>
@@ -50,8 +50,10 @@ const HotelItem = ({ hotelImg, name, country, status }) => {
 const ViewHotels = () => {
   return (
     <Dashboard>
-      <div className="flex flex-col justify-center bg-white font-text px-[2em] py-[1em] m-[2em] rounded-lg">
-        <h1 className="border-b-2 font-bold text-lg pb-[0.8em]">All Hotels</h1>
+      <div className="flex flex-col justify-center bg-white font-text px-[2em] py-[1em] m-[2em] rounded-lg overflow-scroll md:overflow-hidden">
+        <h1 className="border-b-2 font-bold text-lg pb-[0.8em] pt-10 md:pt-0">
+          All Hotels
+        </h1>
         {HotelItems.map((item, index) => (
           <HotelItem
             hotelImg={item.hotelImg}
