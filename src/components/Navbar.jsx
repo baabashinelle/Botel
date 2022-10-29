@@ -42,11 +42,11 @@ const Navbar = () => {
         </ul>
         <article className="gap-5 flex flex-col items-center">
           <button type="button" className="text-[#FD8D3A] font-bold">
-            Login
+            <Link to="/login">Login</Link>
           </button>
 
           <button className="bg-bg-o text-white rounded-md w-[8rem] p-2 drop-shadow-xl font-bold">
-            Sign up
+            <Link to="/login">Sign Up</Link>
           </button>
         </article>
       </div>

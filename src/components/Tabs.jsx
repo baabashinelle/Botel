@@ -4,7 +4,7 @@ import { MdOutlineTour } from "react-icons/md";
 
 const Tabs = () => {
   return (
-    <section className="flex gap-x-6 p-[2em] font-text justify-center items-center">
+    <section className="md:flex grid grid-cols-2 gap-y-6 md:gap-y-0 gap-x-6 md:p-[2em] p-[1rem] font-text justify-center items-center">
       <article className="flex flex-col gap-3 shrink-0 bg-white flex-1 px-[2.5em] py-[1.3em] items-center rounded-lg ">
         <div className="bg-[#ffe3d4] p-3 rounded-lg text-[#ba5e2d]">
           <FaHotel />
