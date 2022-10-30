@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import RoomItems from "../utils/roomsTable";
+import { useStateValue } from "../context/stateProvider";
 import Modal from "./Modal";
-import ViewModalDesign from "./ViewModalDesign";
+import ViewRoomModal from "./ViewRoomModal";
 import { AiOutlineEye } from "react-icons/ai";
 import { FiBookmark } from "react-icons/fi";
 import Dashboard from "../components/Dashboard";
 
-const RoomItem = ({ roomImg, name, country, status }) => {
+const RoomItem = ({ roomImg, name, price, status }) => {
   const [isOpenView, setIsOpenView] = useState(false);
 
   return (
@@ -15,7 +15,7 @@ const RoomItem = ({ roomImg, name, country, status }) => {
         <img src={roomImg} className="w-[5rem] h-[5rem] rounded-md" />
         <div>
           <h3 className="w-[20ch] font-bold">{name}</h3>
-          <p className="text-xs text-gray-400">{country}</p>
+          <p className="text-xs text-gray-400">Price: {price}</p>
         </div>
       </div>
       <div>
@@ -30,7 +30,7 @@ const RoomItem = ({ roomImg, name, country, status }) => {
           <Modal
             isOpen={isOpenView}
             handleCloseModal={() => setIsOpenView(false)}
-            Design={ViewModalDesign}
+            Design={ViewRoomModal}
           />
         )}
 
@@ -48,16 +48,17 @@ const RoomItem = ({ roomImg, name, country, status }) => {
 };
 
 const ViewRooms = () => {
+  const [{ rooms }, dispatch] = useStateValue();
   return (
     <Dashboard>
-      <div className="flex flex-col justify-center bg-white font-text px-[2em] py-[1em] md:m-[2em] m-[1rem] rounded-lg overflow-scroll md:overflow-hidden">
+      <div className="flex flex-col justify-center bg-white font-text px-[2em] py-[1em] md:m-[2em] m-[1rem] rounded-lg overflow-scroll md:overflow-visible">
         <h1 className="border-b-2 font-bold text-lg pb-[0.8em] pt-10 md:pt-0">All Rooms</h1>
-        {RoomItems.map((item, index) => (
+        {rooms.map((room, index) => (
           <RoomItem
-            roomImg={item.roomImg}
-            name={item.name}
-            country={item.country}
-            status={item.status}
+            roomImg={room.image}
+            name={room.name}
+            price={room.price}
+            status={room.status}
             key={index}
           />
         ))}
