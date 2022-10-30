@@ -8,7 +8,7 @@ const BookRoomModal = () => {
    const notify = () => toast.success("Successfully booked! Email confirmation sent");
 
   return (
-    <div className="flex flex-col justify-center gap-8 px-14 py-14 overflow-visible">
+    <div className="flex flex-col justify-center gap-8 px-16 py-16 overflow-visible">
       <article>
         <h3>Check-in</h3>
         <DateTimePicker onChange={onChange} value={value} />
