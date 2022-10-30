@@ -1,7 +1,33 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Link } from "react-router-dom";
+import { useStateValue } from "../context/stateProvider";
+import { FETCH_DATA } from "../utils";
 
 const LoginPage = () => {
+  const [{}, disaptch] = useStateValue();
+  useEffect(() => {
+    FETCH_DATA("hotels", (data) => {
+      //to get actual hotels
+      console.log("hotels", data.data);
+      // store it in context state
+      disaptch({
+        type: "SET_HOTELS", // this is the action type to store hotels in /context/reducer.js
+        hotels: data.data, // now set hotels to data.data from the api
+      });
+    });
+    FETCH_DATA("rooms", (data) => {
+      //to get actual rooms
+      console.log("rooms", data.data);
+      // store it in context state
+      disaptch({
+        type: "SET_ROOMS", // this is the action type to store rooms in /context/reducer.js
+        rooms: data.data, // now set hotels to data.data from the api
+      });
+    });
+
+    // So in this useEffect Hook,
+    // we have fetched all rooms and hotels and dispatched the data to our context state. It is now avaiilable to use in all compnents without fetching from the API again.
+  }, []);
   return (
     <div className="flex items-center gap-16 h-screen overflow-y-hidden font-text bg-bg-c md:bg-none">
       <article className="w-5/6 bg-login bg-no-repeat bg-cover bg-center h-full md:block hidden"></article>

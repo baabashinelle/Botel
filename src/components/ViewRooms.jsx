@@ -9,8 +9,6 @@ import Dashboard from "../components/Dashboard";
 const RoomItem = ({ roomImg, name, country, status }) => {
   const [isOpenView, setIsOpenView] = useState(false);
 
-  
-
   return (
     <article className="flex justify-between items-center py-[1em] border-b-2">
       <div className="flex items-center gap-6 md:w-[20%]">
