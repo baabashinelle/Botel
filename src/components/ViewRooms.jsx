@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import { useStateValue } from "../context/stateProvider";
 import Modal from "./Modal";
 import ViewRoomModal from "./ViewRoomModal";
+import BookRoomModal from "./BookRoomModal";
 import { AiOutlineEye } from "react-icons/ai";
 import { FiBookmark } from "react-icons/fi";
 import Dashboard from "../components/Dashboard";
 
 const RoomItem = ({ roomImg, name, price, status }) => {
   const [isOpenView, setIsOpenView] = useState(false);
+  const [isOpenBook, setIsOpenBook] = useState(false);
 
   return (
     <article className="flex justify-between items-center py-[1em] border-b-2">
@@ -34,12 +36,19 @@ const RoomItem = ({ roomImg, name, price, status }) => {
           />
         )}
 
+        {isOpenBook && (
+          <Modal
+            isOpen={isOpenBook}
+            handleCloseModal={() => setIsOpenBook(false)}
+            Design={BookRoomModal}
+          />
+        )}
         <AiOutlineEye
           onClick={() => setIsOpenView(true)}
           className="hover:text-gray-600 hover:scale-125"
         />
         <FiBookmark
-          onClick={() => setIsOpenView(true)}
+          onClick={() => setIsOpenBook(true)}
           className="hover:text-gray-600 hover:scale-125"
         />
       </div>

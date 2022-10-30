@@ -27,7 +27,10 @@ const HotelItem = ({ hotelImg, name, country, city, status }) => {
           <div className="bg-red-200 text-red-700 py-1 px-3">{status}</div>
         )}
       </div>
-      <div className="flex gap-4 cursor-pointer">
+      <div
+        className="flex gap-1 cursor-pointer items-center hover:scale-110 transition-all"
+        onClick={() => setIsOpenView(true)}
+      >
         {isOpenView && (
           <Modal
             isOpen={isOpenView}
@@ -36,14 +39,10 @@ const HotelItem = ({ hotelImg, name, country, city, status }) => {
           />
         )}
 
-        <AiOutlineEye
-          onClick={() => setIsOpenView(true)}
-          className="hover:text-gray-600 hover:scale-125"
-        />
-        <FiBookmark
-          onClick={() => setIsOpenView(true)}
-          className="hover:text-gray-600 hover:scale-125"
-        />
+        <AiOutlineEye className="text-gray-700" />
+        <span className="text-gray-700">
+          view
+        </span>
       </div>
     </article>
   );
