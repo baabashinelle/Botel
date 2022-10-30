@@ -53,8 +53,8 @@ const ViewHotels = () => {
   const [{ hotels }, dispatch] = useStateValue();
   return (
     <Dashboard>
-      <div className="flex flex-col justify-center bg-white font-text px-[2em] py-[1em] m-[2em] rounded-lg overflow-scroll md:overflow-auto">
-        <h1 className="border-b-2 font-bold text-lg pb-[0.8em] pt-10">
+      <div className="flex flex-col justify-center bg-white font-text px-[2em] py-[1em] m-[2em] rounded-lg overflow-scroll md:overflow-visible">
+        <h1 className="border-b-2 font-bold text-lg pb-[0.8em] pt-10 md:pt-0">
           All Hotels
         </h1>
         {hotels.map((hotel, index) => (
