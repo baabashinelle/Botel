@@ -9,7 +9,7 @@ const HotelItem = ({ hotelImg, name, country, city, status }) => {
   const [isOpenView, setIsOpenView] = useState(false);
   
   return (
-    <article className="flex justify-between items-center py-[1em] md:border-b-2 border-t-2 w-max md:w-full gap-14">
+    <article className="flex justify-between items-center py-[1em] md:border-b-2 md:border-t-0 border-t-2 w-max md:w-full gap-14">
       <div className="flex items-center gap-6 w-min md:w-[20%]">
         <img src={hotelImg} className="w-[5rem] h-[5rem] rounded-md" />
         <div>
@@ -50,7 +50,7 @@ const ViewHotels = () => {
   return (
     <Dashboard>
       <div className="flex flex-col justify-center bg-white font-text px-[2em] py-[1em] m-[2em] rounded-lg overflow-scroll md:overflow-visible">
-        <h1 className="font-bold text-lg pb-[0.8em] mt-[10rem] md:mt-0">
+        <h1 className="md:border-b-2 font-bold text-lg pb-[0.8em] mt-[10rem] md:mt-0">
           All Hotels
         </h1>
         {hotels.map((hotel, index) => (

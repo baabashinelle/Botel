@@ -4,8 +4,8 @@ import { AiOutlineBars } from "react-icons/ai";
 
 const DashboardNav = ({ handleClick }) => {
   return (
-    <nav className="w-full flex font-text text-lg py-4 px-6 justify-between md:justify-end items-center bg-white">
-      <div className="text-lg md:hidden">
+    <nav className="w-full flex font-text text-lg py-4 px-6 justify-between lg:justify-end items-center bg-white">
+      <div className="text-lg lg:hidden">
         <AiOutlineBars className="cursor-pointer" onClick={handleClick} />
       </div>
       <div className="flex items-center justify-center gap-3">

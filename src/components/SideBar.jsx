@@ -9,7 +9,7 @@ const SideBar = ({ showSideBar, handleClick }) => {
   const { pathname } = useLocation();
   return (
     <>
-      <section className="w-[20%] min-h-screen md:flex flex-col items-center font-text p-5 shadow-sm hidden">
+      <section className="w-[20%] min-h-screen lg:flex flex-col items-center font-text p-5 shadow-sm hidden">
         {/*logo*/}
         <article className="flex justify-center items-center gap-2 w-full mb-[6rem] pt-2">
           <h3 className="text-2xl font-bold font-header">
@@ -64,7 +64,7 @@ const SideBar = ({ showSideBar, handleClick }) => {
 
       {/* for mobile screens */}
       {showSideBar && (
-        <section className="w-full fixed bg-white z-20 min-h-screen flex flex-col items-center font-text p-5 shadow-sm md:hidden">
+        <section className="w-full fixed bg-white z-20 min-h-screen flex flex-col items-center font-text p-5 shadow-sm lg:hidden">
           {/*logo*/}
           <article className="flex justify-between items-center gap-2 w-full mb-[6rem] pt-2">
             <h3 className="text-2xl font-bold font-header flex items-center gap-2">
