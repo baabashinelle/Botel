@@ -5,10 +5,10 @@ import "react-toastify/dist/ReactToastify.css";
 
 const BookRoomModal = () => {
   const [value, onChange] = useState(new Date());
-   const notify = () => toast.success("Successfully booked! Email confirmation sent");
+   const notify = () => toast.success("Receipt sent to email!");
 
   return (
-    <div className="flex flex-col justify-center gap-8 px-16 py-16 overflow-visible">
+    <div className="flex flex-col justify-center gap-8 px-24 py-24 overflow-auto">
       <article>
         <h3>Check-in</h3>
         <DateTimePicker onChange={onChange} value={value} />
@@ -24,7 +24,7 @@ const BookRoomModal = () => {
         >
           Book
         </button>
-        <ToastContainer position="top-left"/>
+        <ToastContainer position="top-center"/>
       </article>
     </div>
   );
