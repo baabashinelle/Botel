@@ -1,18 +1,102 @@
 @import url("https://fonts.googleapis.com/css2?family=Volkhov&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Navbar */
+.signup-btn {
+  transition: all 0.2s linear 0s;
+}
+.signup-btn::before {
+  content: "\f2f6";
+  position: absolute;
+  font-family: FontAwesome;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  height: 100%;
+  width: 40px;
+  transition: all 0.2s linear 0s;
+}
+.signup-btn:hover {
+  text-indent: -20px;
+}
+.signup-btn:hover::before {
+  opacity: 1;
+  text-indent: 0px;
+}
+.discover-btn {
+  overflow: hidden;
+  position: relative;
+  will-change: transform;
+  z-index: 0;
+  transition: 0.2s transform ease-in-out;
+}
+.discover-btn::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.3s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+  background-color: #fa7436;
+  border-radius: 0.375rem;
+}
+.discover-btn:hover::after {
+  transform: translate(0, 0);
+}
+.discover-btn:hover {
+  color: #fff;
+  border: 2px solid transparent;
+  transform: scale(1.01);
+  will-change: transform;
+}
+@media screen and (min-width: 1300px) {
+  .explore-btn {
+    transition: all 0.2s linear 0s;
+  }
+  .explore-btn::before {
+    content: "\f0ac";
+    position: absolute;
+    font-family: FontAwesome;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    height: 100%;
+    width: 40px;
+    transition: all 0.2s linear 0s;
+  }
+  .explore-btn:hover {
+    text-indent: -20px;
+  }
+  .explore-btn:hover::before {
+    opacity: 1;
+    text-indent: 0px;
+  }
+}
 /* Blog Carousel */
 .alice-carousel__dots-item:not(.__custom).__active {
   background-color: #fa7436 !important;
   padding: 0.35rem;
 }
-.alice-carousel__stage-item{
-  max-width: fit-content!important;
-  padding-right: 2rem!important;
+.alice-carousel__stage-item {
+  max-width: fit-content !important;
+  padding-right: 2rem !important;
 }
 /* .deals-carousel .alice-carousel__stage-item{
   width: unset!important;
@@ -27,17 +111,17 @@
 }
 } */
 /* Deals Carousel */
- /* Hotel card button */
- .hotel-btn{
+/* Hotel card button */
+.hotel-btn {
   opacity: 0;
- }
- 
-  .hotel-card:hover .hotel-btn{
-    opacity: 1;
-    z-index: 100;
-    transition: opacity 0.2s ease-in;
-  }
-  .hotel-card:hover > img{
-    opacity: 0.9;
-    transition: opacity 0.2s ease-in-out;
-  }
+}
+
+.hotel-card:hover .hotel-btn {
+  opacity: 1;
+  z-index: 100;
+  transition: opacity 0.2s ease-in;
+}
+.hotel-card:hover > img {
+  opacity: 0.9;
+  transition: opacity 0.2s ease-in-out;
+}

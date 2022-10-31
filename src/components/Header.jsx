@@ -19,7 +19,7 @@ const Header = () => {
             the best advice and tips for your desire place.
           </p>
           <div>
-            <button className="md:w-[10rem] p-3 font-text rounded-md bg-white font-semibold text-primary-o border-primary-o border-[1px]">
+            <button className="md:w-[10rem] p-3 font-text rounded-md bg-white font-semibold text-primary-o border-primary-o border-[1px] discover-btn">
               Discover Now
             </button>
           </div>

@@ -28,7 +28,7 @@ const SearchSection = () => {
           <p className="text-text-light text-sm pt-3">Number of guest</p>
         </article>
         <article>
-          <button className="md:w-[10rem] p-3 font-text rounded-md text-white font-semibold bg-primary-o border-primary-o border-[1px] drop-shadow-xl">
+          <button className="md:w-[10rem] p-3 font-text rounded-md text-white font-semibold bg-primary-o border-primary-o border-[1px] drop-shadow-xl explore-btn">
             <Link to="/login">Explore Now</Link>
           </button>
         </article>

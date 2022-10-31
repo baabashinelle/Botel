@@ -64,19 +64,19 @@ const Navbar = () => {
         </article>
         <article className="hidden lg:inline-block">
           <ul className="flex flex-row gap-6">
-            <li className="hover:scale-110 hover:text-gray-600 transition-all relative hover:after:absolute hover:after:bg-primary-o hover:after:w-2 hover:after:h-2 hover:after:-bottom-2 hover:after:rounded-full hover:after:left-[50%] hover:after:transition-all">
+            <li className="hover:scale-110 hover:text-gray-600 transition-all">
               <a href="#">Home</a>
             </li>
-            <li className="hover:scale-110 hover:text-gray-600 transition-all relative hover:after:absolute hover:after:bg-primary-o hover:after:w-2 hover:after:h-2 hover:after:-bottom-2 hover:after:rounded-full hover:after:left-[50%] hover:after:transition-all">
+            <li className="hover:scale-110 hover:text-gray-600 transition-all">
               <a href="#">About</a>
             </li>
-            <li className="hover:scale-110 hover:text-gray-600 transition-all relative hover:after:absolute hover:after:bg-primary-o hover:after:w-2 hover:after:h-2 hover:after:-bottom-2 hover:after:rounded-full hover:after:left-[50%] hover:after:transition-all">
+            <li className="hover:scale-110 hover:text-gray-600 transition-all">
               <a href="#">Destination</a>
             </li>
-            <li className="hover:scale-110 hover:text-gray-600 transition-all relative hover:after:absolute hover:after:bg-primary-o hover:after:w-2 hover:after:h-2 hover:after:-bottom-2 hover:after:rounded-full hover:after:left-[50%] hover:after:transition-all">
+            <li className="hover:scale-110 hover:text-gray-600 transition-all">
               <a href="#">Tour</a>
             </li>
-            <li className="hover:scale-110 hover:text-gray-600 transition-all relative hover:after:absolute hover:after:bg-primary-o hover:after:w-2 hover:after:h-2 hover:after:-bottom-2 hover:after:rounded-full hover:after:left-[50%] hover:after:transition-all">
+            <li className="hover:scale-110 hover:text-gray-600 transition-all">
               <a href="#">Blog</a>
             </li>
           </ul>
@@ -93,7 +93,7 @@ const Navbar = () => {
           <button type="button" className="text-[#FD8D3A] font-bold">
             <Link to="/login">Login</Link>
           </button>
-          <button className="bg-bg-o text-white rounded-md w-[8rem] p-2 drop-shadow-xl font-bold">
+          <button className="bg-bg-o text-white rounded-md w-[8rem] p-2 drop-shadow-xl font-bold signup-btn">
             <Link to="/login">Sign up</Link>
           </button>
         </article>
