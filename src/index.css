@@ -91,10 +91,16 @@
 }
 /* Hotels Carousel */
 @media screen and (max-width: 1100px) {
-  .carousel{
-  width: 100vw;
+  .carousel {
+    width: 100vw;
+  }
 }
+@media screen and (min-width: 1430px) {
+  .desktop-crsl .carousel {
+    width: 70rem;
+  }
 }
+
 /* Blog Carousel */
 .alice-carousel__dots-item:not(.__custom).__active {
   background-color: #fa7436 !important;
@@ -104,24 +110,10 @@
   max-width: fit-content !important;
   padding-right: 2rem !important;
 }
-/* .deals-carousel .alice-carousel__stage-item{
-  width: unset!important;
-} */
-/* .alice-carousel__next-btn-item.__inactive{
-  background-color: red!important;
-} */
-
-/* @media screen and (max-width: 600px) {
-  .deals-carousel .alice-carousel__stage-item{
-  width: 100%!important;
-}
-} */
-/* Deals Carousel */
 /* Hotel card button */
 .hotel-btn {
   opacity: 0;
 }
-
 .hotel-card:hover .hotel-btn {
   opacity: 1;
   z-index: 100;

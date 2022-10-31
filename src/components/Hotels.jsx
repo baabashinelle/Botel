@@ -55,7 +55,7 @@ const HotelCarousel = ({
 const Hotels = () => {
   return (
     <>
-      <section className="font-text lg:flex justify-center items-center hidden">
+      <section className="font-text lg:flex justify-center items-center hidden desktop-crsl">
         <CarouselProvider isIntrinsicHeight={true} totalSlides={2}>
           <Slider>
             <Slide index={0} tabIndex="null">
