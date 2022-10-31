@@ -55,11 +55,11 @@ const HotelCarousel = ({
 const Hotels = () => {
   return (
     <>
-      <section className="font-text md:flex justify-center items-center hidden">
+      <section className="font-text lg:flex justify-center items-center hidden">
         <CarouselProvider isIntrinsicHeight={true} totalSlides={2}>
           <Slider>
             <Slide index={0} tabIndex="null">
-              <div className="grid md:grid-cols-carousel gap-8 justify-center">
+              <div className="grid md:grid-cols-carousel lg:gap-3 xl:gap-8 justify-center">
                 {HotelData.map((item, index) => (
                   <HotelCarousel
                     hotelImg={item.hotelImg}
@@ -74,7 +74,7 @@ const Hotels = () => {
               </div>
             </Slide>
             <Slide index={1}>
-              <div className="grid md:grid-cols-carousel gap-8 justify-center">
+              <div className="grid md:grid-cols-carousel lg:gap-3 xl:gap-8 justify-center">
                 {HotelData.map((item, index) => (
                   <HotelCarousel
                     hotelImg={item.hotelImg}
@@ -105,11 +105,11 @@ const Hotels = () => {
       </section>
 
       {/* for mobile */}
-      <section className="font-text md:hidden flex justify-center items-center">
+      <section className="font-text lg:hidden flex justify-center items-center">
         <CarouselProvider isIntrinsicHeight={true} totalSlides={2}>
           <Slider>
             <Slide index={0} tabIndex="null">
-              <div className="grid md:grid-cols-carousel gap-8 justify-center">
+              <div className="grid md:grid-cols-carousel gap-8 md:gap-0 justify-center">
                 {HotelData.map((item, index) => (
                   <HotelCarousel
                     hotelImg={item.hotelImg}
