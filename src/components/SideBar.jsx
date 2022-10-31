@@ -2,10 +2,10 @@ import React from "react";
 import logo from "../assets/logo.png";
 import { Link, useLocation } from "react-router-dom";
 import { AiOutlineHome } from "react-icons/ai";
-import { AiOutlineEye } from "react-icons/ai";
+import { AiOutlineEye, AiOutlineClose } from "react-icons/ai";
 import { FiLogOut } from "react-icons/fi";
 
-const SideBar = ({ showSideBar }) => {
+const SideBar = ({ showSideBar, handleClick }) => {
   const { pathname } = useLocation();
   return (
     <>
@@ -64,14 +64,15 @@ const SideBar = ({ showSideBar }) => {
 
       {/* for mobile screens */}
       {showSideBar && (
-        <section className="w-full min-h-screen flex flex-col items-center font-text p-5 shadow-sm md:hidden">
+        <section className="w-full fixed bg-white z-20 min-h-screen flex flex-col items-center font-text p-5 shadow-sm md:hidden">
           {/*logo*/}
-          <article className="flex justify-center items-center gap-2 w-full mb-[6rem] pt-2">
-            <h3 className="text-2xl font-bold font-header">
+          <article className="flex justify-between items-center gap-2 w-full mb-[6rem] pt-2">
+            <h3 className="text-2xl font-bold font-header flex items-center gap-2">
               <Link to="/">Botel</Link>
-            </h3>
-            <div>
               <img src={logo} alt="Botel Logo" />
+            </h3>
+            <div className="text-lg">
+              <AiOutlineClose onClick={handleClick}/>
             </div>
           </article>
           <article className="flex flex-col justify-between h-[70vh]">

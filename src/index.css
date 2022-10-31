@@ -89,6 +89,12 @@
     text-indent: 0px;
   }
 }
+/* Hotels Carousel */
+@media screen and (max-width: 1100px) {
+  .carousel{
+  width: 100vw;
+}
+}
 /* Blog Carousel */
 .alice-carousel__dots-item:not(.__custom).__active {
   background-color: #fa7436 !important;

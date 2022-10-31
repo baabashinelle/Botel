@@ -37,9 +37,9 @@ const Dashboard = ({ children }) => {
   }, []);
   return (
     <main className="flex h-screen justify-between">
-       <SideBar showSideBar={showSideBar}/>
+      <SideBar showSideBar={showSideBar} handleClick={handleClick} />
       <div className="flex flex-col w-full bg-gray-100 min-h-[100vh] overflow-auto">
-        <DashboardNav handleClick={handleClick} showSideBar={showSideBar} />
+        <DashboardNav handleClick={handleClick} />
         {children}
       </div>
     </main>
