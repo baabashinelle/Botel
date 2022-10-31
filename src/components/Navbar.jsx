@@ -64,19 +64,19 @@ const Navbar = () => {
         </article>
         <article className="hidden lg:inline-block">
           <ul className="flex flex-row gap-6">
-            <li>
+            <li className="hover:scale-110 hover:text-gray-600 transition-all relative hover:after:absolute hover:after:bg-primary-o hover:after:w-2 hover:after:h-2 hover:after:-bottom-2 hover:after:rounded-full hover:after:left-[50%] hover:after:transition-all">
               <a href="#">Home</a>
             </li>
-            <li>
+            <li className="hover:scale-110 hover:text-gray-600 transition-all relative hover:after:absolute hover:after:bg-primary-o hover:after:w-2 hover:after:h-2 hover:after:-bottom-2 hover:after:rounded-full hover:after:left-[50%] hover:after:transition-all">
               <a href="#">About</a>
             </li>
-            <li>
+            <li className="hover:scale-110 hover:text-gray-600 transition-all relative hover:after:absolute hover:after:bg-primary-o hover:after:w-2 hover:after:h-2 hover:after:-bottom-2 hover:after:rounded-full hover:after:left-[50%] hover:after:transition-all">
               <a href="#">Destination</a>
             </li>
-            <li>
+            <li className="hover:scale-110 hover:text-gray-600 transition-all relative hover:after:absolute hover:after:bg-primary-o hover:after:w-2 hover:after:h-2 hover:after:-bottom-2 hover:after:rounded-full hover:after:left-[50%] hover:after:transition-all">
               <a href="#">Tour</a>
             </li>
-            <li>
+            <li className="hover:scale-110 hover:text-gray-600 transition-all relative hover:after:absolute hover:after:bg-primary-o hover:after:w-2 hover:after:h-2 hover:after:-bottom-2 hover:after:rounded-full hover:after:left-[50%] hover:after:transition-all">
               <a href="#">Blog</a>
             </li>
           </ul>
