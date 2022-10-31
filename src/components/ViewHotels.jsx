@@ -3,15 +3,14 @@ import { useStateValue } from "../context/stateProvider";
 import Modal from "./Modal";
 import ViewHotelModal from "./ViewHotelModal";
 import { AiOutlineEye } from "react-icons/ai";
-import { FiBookmark } from "react-icons/fi";
 import Dashboard from "../components/Dashboard";
 
 const HotelItem = ({ hotelImg, name, country, city, status }) => {
   const [isOpenView, setIsOpenView] = useState(false);
   
   return (
-    <article className="flex justify-between items-center py-[1em] border-b-2 ">
-      <div className="flex items-center gap-6 md:w-[20%]">
+    <article className="flex justify-between items-center py-[1em] md:border-b-2 border-t-2 w-max md:w-full gap-14">
+      <div className="flex items-center gap-6 w-min md:w-[20%]">
         <img src={hotelImg} className="w-[5rem] h-[5rem] rounded-md" />
         <div>
           <h3 className="font-bold w-[20ch]">{name}</h3>
@@ -22,7 +21,7 @@ const HotelItem = ({ hotelImg, name, country, city, status }) => {
       </div>
       <div>
         {status == "Available" ? (
-          <div className="bg-green-200 text-green-700 py-1 px-3">{status}</div>
+          <div className="bg-green-200 text-green-700  py-1 px-6">{status}</div>
         ) : (
           <div className="bg-red-200 text-red-700 py-1 px-3">{status}</div>
         )}
@@ -40,9 +39,7 @@ const HotelItem = ({ hotelImg, name, country, city, status }) => {
         )}
 
         <AiOutlineEye className="text-gray-700" />
-        <span className="text-gray-700">
-          view
-        </span>
+        <span className="text-gray-700">view</span>
       </div>
     </article>
   );
@@ -53,7 +50,7 @@ const ViewHotels = () => {
   return (
     <Dashboard>
       <div className="flex flex-col justify-center bg-white font-text px-[2em] py-[1em] m-[2em] rounded-lg overflow-scroll md:overflow-visible">
-        <h1 className="border-b-2 font-bold text-lg pb-[0.8em] pt-10 md:pt-0">
+        <h1 className="font-bold text-lg pb-[0.8em] mt-[10rem] md:mt-0">
           All Hotels
         </h1>
         {hotels.map((hotel, index) => (
