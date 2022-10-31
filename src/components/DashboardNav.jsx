@@ -1,18 +1,14 @@
-import React from 'react'
+import React from "react";
 import avatarImg from "../assets/avatar.jpg";
 import { AiOutlineBars } from "react-icons/ai";
 
-const DashboardNav = ({ handleClick }) => {
-
+const DashboardNav = ({ handleClick, showSideBar }) => {
   return (
     <nav className="w-full flex font-text text-lg py-4 px-6 justify-between md:justify-end items-center bg-white">
       <div className="text-lg md:hidden">
-        <AiOutlineBars
-          className="cursor-pointer"
-          onClick={handleClick}
-        />
+        <AiOutlineBars className="cursor-pointer" onClick={handleClick} />
       </div>
-      <div className="flex items-center justify-center gap-3">
+      <div className={`${showSideBar && "hidden"} flex items-center justify-center gap-3`}>
         <div>
           <div className="text-right flex-col flex items-end justify-center">
             <h3 className="font-extrabold">Howdy!</h3>
@@ -30,6 +26,6 @@ const DashboardNav = ({ handleClick }) => {
       </div>
     </nav>
   );
-}
+};
 
-export default DashboardNav
+export default DashboardNav;

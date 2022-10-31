@@ -36,7 +36,7 @@ const SideBar = ({ showSideBar }) => {
                 pathname == "/viewrooms" ? "bg-[#ffe3d4]" : null
               } px-8 py-2 rounded-md`}
             >
-              <div className="flex items-center gap-4 cursor-pointer">
+              <div className="flex items-center gap-4 cursor-pointer whitespace-nowrap">
                 <AiOutlineEye />
                 <Link to={"/viewrooms"}>View Rooms</Link>
               </div>
@@ -46,7 +46,7 @@ const SideBar = ({ showSideBar }) => {
                 pathname == "/viewhotels" ? "bg-[#ffe3d4]" : null
               } px-8 py-2 rounded-md`}
             >
-              <div className="flex items-center gap-4 cursor-pointer">
+              <div className="flex items-center gap-4 cursor-pointer whitespace-nowrap">
                 <AiOutlineEye />
                 <Link to={"/viewhotels"}>View Hotels</Link>
               </div>
@@ -91,7 +91,7 @@ const SideBar = ({ showSideBar }) => {
                   pathname == "/viewrooms" ? "bg-[#ffe3d4]" : null
                 } px-8 py-2 rounded-md`}
               >
-                <div className="flex items-center gap-4 cursor-pointer">
+                <div className="flex items-center gap-4 cursor-pointer whitespace-nowrap">
                   <AiOutlineEye />
                   <Link to={"/viewrooms"}>View Rooms</Link>
                 </div>
@@ -101,7 +101,7 @@ const SideBar = ({ showSideBar }) => {
                   pathname == "/viewhotels" ? "bg-[#ffe3d4]" : null
                 } px-8 py-2 rounded-md`}
               >
-                <div className="flex items-center gap-4 cursor-pointer">
+                <div className="flex items-center gap-4 cursor-pointer whitespace-nowrap">
                   <AiOutlineEye />
                   <Link to={"/viewhotels"}>View Hotels</Link>
                 </div>
