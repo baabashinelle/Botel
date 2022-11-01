@@ -60,13 +60,13 @@ const Blog = () => {
         </h3>
       </article>
       <article className="pt-12 md:w-[70%] sm:w-[55%] w-[70%] flex justify-center items-center">
-        <AliceCarousel
-          mouseTracking
-          items={items}
-          responsive={responsive}
-          controlsStrategy="alternate"
-          disableButtonsControls={true}
-        />
+          <AliceCarousel
+            mouseTracking
+            items={items}
+            responsive={responsive}
+            controlsStrategy="alternate"
+            disableButtonsControls={true}
+          />
       </article>
     </section>
   );

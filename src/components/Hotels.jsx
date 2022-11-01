@@ -3,6 +3,7 @@ import HotelData from "../utils/hotels";
 import { Link } from "react-router-dom";
 import { HiLocationMarker } from "react-icons/hi";
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
+import { Fade } from "react-awesome-reveal";
 import {
   CarouselProvider,
   Slider,
@@ -57,50 +58,52 @@ const Hotels = () => {
     <>
       <section className="font-text lg:flex justify-center items-center hidden desktop-crsl">
         <CarouselProvider isIntrinsicHeight={true} totalSlides={2}>
-          <Slider>
-            <Slide index={0} tabIndex="null">
-              <div className="grid md:grid-cols-carousel lg:gap-3 xl:gap-8 justify-center">
-                {HotelData.map((item, index) => (
-                  <HotelCarousel
-                    hotelImg={item.hotelImg}
-                    key={index}
-                    city={item.city}
-                    country={item.country}
-                    rating={item.rating}
-                    oldPrice={item.oldPrice}
-                    newPrice={item.newPrice}
-                  />
-                ))}
-              </div>
-            </Slide>
-            <Slide index={1}>
-              <div className="grid md:grid-cols-carousel lg:gap-3 xl:gap-8 justify-center">
-                {HotelData.map((item, index) => (
-                  <HotelCarousel
-                    hotelImg={item.hotelImg}
-                    key={index}
-                    city={item.city}
-                    country={item.country}
-                    rating={item.rating}
-                    oldPrice={item.oldPrice}
-                    newPrice={item.newPrice}
-                  />
-                ))}
-              </div>
-            </Slide>
-          </Slider>
-          <div className="flex justify-center gap-8 pt-10">
-            <ButtonBack>
-              <div className="border-2 rounded-full text-gray-400 cursor-pointer w-8 h-8 flex justify-center items-center text-3xl ">
-                <BsArrowLeftShort />
-              </div>
-            </ButtonBack>
-            <ButtonNext>
-              <div className="rounded-full bg-primary-o border-2 border-primary-o text-white cursor-pointer w-8 h-8 flex justify-center items-center text-3xl">
-                <BsArrowRightShort />
-              </div>
-            </ButtonNext>
-          </div>
+          <Fade cascade triggerOnce direction="up" duration={2000}>
+            <Slider>
+              <Slide index={0} tabIndex="null">
+                <div className="grid md:grid-cols-carousel lg:gap-3 xl:gap-8 justify-center">
+                  {HotelData.map((item, index) => (
+                    <HotelCarousel
+                      hotelImg={item.hotelImg}
+                      key={index}
+                      city={item.city}
+                      country={item.country}
+                      rating={item.rating}
+                      oldPrice={item.oldPrice}
+                      newPrice={item.newPrice}
+                    />
+                  ))}
+                </div>
+              </Slide>
+              <Slide index={1}>
+                <div className="grid md:grid-cols-carousel lg:gap-3 xl:gap-8 justify-center">
+                  {HotelData.map((item, index) => (
+                    <HotelCarousel
+                      hotelImg={item.hotelImg}
+                      key={index}
+                      city={item.city}
+                      country={item.country}
+                      rating={item.rating}
+                      oldPrice={item.oldPrice}
+                      newPrice={item.newPrice}
+                    />
+                  ))}
+                </div>
+              </Slide>
+            </Slider>
+            <div className="flex justify-center gap-8 pt-10">
+              <ButtonBack>
+                <div className="border-2 rounded-full text-gray-400 cursor-pointer w-8 h-8 flex justify-center items-center text-3xl ">
+                  <BsArrowLeftShort />
+                </div>
+              </ButtonBack>
+              <ButtonNext>
+                <div className="rounded-full bg-primary-o border-2 border-primary-o text-white cursor-pointer w-8 h-8 flex justify-center items-center text-3xl">
+                  <BsArrowRightShort />
+                </div>
+              </ButtonNext>
+            </div>
+          </Fade>
         </CarouselProvider>
       </section>
 

@@ -7,10 +7,8 @@ import trophyIcon from "../assets/trophy.png";
 
 const Header = () => {
   return (
-    <section>
-      <div
-        className="flex flex-col lg:flex-row lg:pl-16 xl:pl-24 pl-5 justify-center items-center"
-      >
+    <section className="overflow-hidden">
+      <div className="flex flex-col lg:flex-row lg:pl-16 xl:pl-24 pl-5 justify-center items-center">
         <article className="md:w-[36rem]">
           <h1 className="pt-14 md:pt-14 2xl:pt-0 xl:text-[64px] md:text-[54px] sm:text-[40px] text-[35px] font-semibold md:leading-none leading-tight font-header tracking-wide">
             Get started your exciting
