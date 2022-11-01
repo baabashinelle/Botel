@@ -1,19 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
-AOS.init();
 const SearchSection = () => {
   return (
     <div className="flex md:flex-row flex-col justify-center items-center pb-[8rem]">
       <div
-        data-aos="fade-up"
-        data-aos-duration="1200"
-        data-aos-delay="3000"
-        data-aos-easing="ease-in-out"
-        data-aos-once="true"
         className="bg-white flex md:flex-row flex-col justify-center items-center rounded-md font-text gap-20 lg:w-[55rem] md:w-[45rem] w-[15rem] py-6 md:px-4 lg:px-0"
       >
         <article>

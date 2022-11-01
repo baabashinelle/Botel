@@ -4,19 +4,11 @@ import travelManMobile from "../assets/travel-man.png";
 import mapIcon from "../assets/map.png";
 import starIcon from "../assets/star.png";
 import trophyIcon from "../assets/trophy.png";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
-AOS.init();
 const Header = () => {
   return (
     <section>
       <div
-        data-aos="fade-up"
-        data-aos-duration="1200"
-        data-aos-delay="100"
-        data-aos-easing="ease-in-out"
-        data-aos-once="true"
         className="flex flex-col lg:flex-row lg:pl-16 xl:pl-24 pl-5 justify-center items-center"
       >
         <article className="md:w-[36rem]">
