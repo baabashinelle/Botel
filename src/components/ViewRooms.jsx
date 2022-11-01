@@ -6,17 +6,19 @@ import BookRoomModal from "./BookRoomModal";
 import { AiOutlineEye } from "react-icons/ai";
 import { FiBookmark } from "react-icons/fi";
 import Dashboard from "../components/Dashboard";
+import { getHotelName } from "../utils";
 
-const RoomItem = ({ roomImg, name, price, status }) => {
+const RoomItem = ({ roomImg, price, status, roomid }) => {
   const [isOpenView, setIsOpenView] = useState(false);
   const [isOpenBook, setIsOpenBook] = useState(false);
+  const [{ hotels }, dispatch] = useStateValue();
 
   return (
     <article className="flex justify-between items-center py-[1em] md:border-b-2 md:border-t-0 border-t-2 w-max md:w-full gap-14">
-      <div className="flex items-center gap-6 w-min md:w-[20%] overflow-hidden md:overflow-visible">
+      <div className="flex items-center gap-6 w-min md:w-[20%] overflow-visible md:overflow-visible">
         <img src={roomImg} className="w-[5rem] h-[5rem] rounded-md" />
         <div>
-          <h3 className="w-[20ch] font-bold">{name}</h3>
+          <h3 className="w-[20ch] font-bold">{getHotelName(roomid, hotels)}</h3>
           <p className="text-xs text-gray-400 inline">Price: {price}</p>
         </div>
       </div>
@@ -67,9 +69,9 @@ const ViewRooms = () => {
         {rooms.map((room, index) => (
           <RoomItem
             roomImg={room.image}
-            name={room.name}
             price={room.price}
             status={room.status}
+            roomid={room._id}
             key={index}
           />
         ))}

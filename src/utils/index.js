@@ -16,6 +16,15 @@ export const FETCH_DATA = async (url, callback) => {
   }
 };
 
+export const getHotelName = (roomid, hotels) => {
+  const hotel = hotels.map((hotel) => {
+    return hotel.rooms.map((room) => {
+      return room == roomid ? hotel.name : null;
+    });
+  });
+  return hotel;
+};
+
 // export const ADD_HOTEL = async (hotel, url, callback) => {
 //   try {
 //     const { data } = await Axios({
