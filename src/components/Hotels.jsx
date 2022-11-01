@@ -109,7 +109,7 @@ const Hotels = () => {
         <CarouselProvider isIntrinsicHeight={true} totalSlides={2}>
           <Slider>
             <Slide index={0} tabIndex="null">
-              <div className="grid md:grid-cols-carousel gap-8 md:gap-0 justify-center">
+              <div className="grid md:grid-cols-2 gap-8 justify-items-center">
                 {HotelData.map((item, index) => (
                   <HotelCarousel
                     hotelImg={item.hotelImg}
@@ -124,7 +124,7 @@ const Hotels = () => {
               </div>
             </Slide>
             <Slide index={1}>
-              <div className="grid md:grid-cols-carousel gap-8 justify-center">
+              <div className="grid md:grid-cols-2 gap-8 justify-items-center">
                 {HotelData.map((item, index) => (
                   <HotelCarousel
                     hotelImg={item.hotelImg}
