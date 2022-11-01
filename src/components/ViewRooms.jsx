@@ -15,7 +15,7 @@ const RoomItem = ({ roomImg, price, status, roomid }) => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 7000);
   }, []);
   const [isOpenView, setIsOpenView] = useState(false);
   const [isOpenBook, setIsOpenBook] = useState(false);
