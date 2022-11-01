@@ -1,46 +1,62 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useStateValue } from "../context/stateProvider";
 import Modal from "./Modal";
 import ViewHotelModal from "./ViewHotelModal";
 import { AiOutlineEye } from "react-icons/ai";
 import Dashboard from "../components/Dashboard";
+import Preloader from "./Preloader";
 
 const HotelItem = ({ hotelImg, name, country, city, status }) => {
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, []);
   const [isOpenView, setIsOpenView] = useState(false);
   
   return (
     <article className="flex justify-between items-center py-[1em] md:border-b-2 md:border-t-0 border-t-2 w-max md:w-full gap-14">
-      <div className="flex items-center gap-6 w-min md:w-[20%]">
-        <img src={hotelImg} className="w-[5rem] h-[5rem] rounded-md" />
-        <div>
-          <h3 className="font-bold w-[20ch]">{name}</h3>
-          <p className="text-xs text-gray-400">
-            {country}, {city}
-          </p>
-        </div>
-      </div>
-      <div>
-        {status == "Available" ? (
-          <div className="bg-green-200 text-green-700  py-1 px-6">{status}</div>
-        ) : (
-          <div className="bg-red-200 text-red-700 py-1 px-3">{status}</div>
-        )}
-      </div>
-      <div
-        className="flex gap-1 cursor-pointer items-center hover:scale-110 transition-all"
-        onClick={() => setIsOpenView(true)}
-      >
-        {isOpenView && (
-          <Modal
-            isOpen={isOpenView}
-            handleCloseModal={() => setIsOpenView(false)}
-            Design={ViewHotelModal}
-          />
-        )}
+      {loading ? (
+        <Preloader />
+      ) : (
+        <>
+          <div className="flex items-center gap-6 w-min md:w-[20%]">
+            <img src={hotelImg} className="w-[5rem] h-[5rem] rounded-md" />
+            <div>
+              <h3 className="font-bold w-[20ch]">{name}</h3>
+              <p className="text-xs text-gray-400">
+                {country}, {city}
+              </p>
+            </div>
+          </div>
+          <div>
+            {status == "Available" ? (
+              <div className="bg-green-200 text-green-700  py-1 px-6">
+                {status}
+              </div>
+            ) : (
+              <div className="bg-red-200 text-red-700 py-1 px-3">{status}</div>
+            )}
+          </div>
+          <div
+            className="flex gap-1 cursor-pointer items-center hover:scale-110 transition-all"
+            onClick={() => setIsOpenView(true)}
+          >
+            {isOpenView && (
+              <Modal
+                isOpen={isOpenView}
+                handleCloseModal={() => setIsOpenView(false)}
+                Design={ViewHotelModal}
+              />
+            )}
 
-        <AiOutlineEye className="text-gray-700" />
-        <span className="text-gray-700">view</span>
-      </div>
+            <AiOutlineEye className="text-gray-700" />
+            <span className="text-gray-700">view</span>
+          </div>
+        </>
+      )}
     </article>
   );
 };
