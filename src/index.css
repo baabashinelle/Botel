@@ -111,7 +111,16 @@
     width: 70rem;
   }
 }
-
+/* Testimonial */
+.img-div{
+  background-image: url("./assets//avatar.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.new-bg{
+  background-image: url("./assets/ricknmorty.jpg");
+}
 /* Blog Carousel */
 .alice-carousel__dots-item:not(.__custom).__active {
   background-color: #fa7436 !important;
