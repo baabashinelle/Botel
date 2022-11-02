@@ -34,9 +34,7 @@
 .discover-btn {
   overflow: hidden;
   position: relative;
-  will-change: transform;
   z-index: 0;
-  transition: 0.2s transform ease-in-out;
 }
 .discover-btn::after {
   content: "";
@@ -59,9 +57,7 @@
 }
 .discover-btn:hover {
   color: #fff;
-  border: 2px solid transparent;
-  transform: scale(1.01);
-  will-change: transform;
+  border-color:transparent;
 }
 .slide-testimonial{
   background-color: white;
