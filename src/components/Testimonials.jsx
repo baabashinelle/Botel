@@ -45,7 +45,7 @@ const Testimonials = () => {
               no.”
             </p>
             <p className="pt-5">
-              <h4 className="font-bold text-sm">Mike Taylor</h4>
+              <div className="font-bold text-sm">Mike Taylor</div>
               <p className="text-xs">Lahore, Pakistan</p>
             </p>
           </article>
@@ -56,7 +56,7 @@ const Testimonials = () => {
               use.”
             </p>
             <p className="pt-5">
-              <h4 className="font-bold text-sm">Chris Taylor</h4>
+              <div className="font-bold text-sm">Chris Taylor</div>
               <p className="text-xs">CEO of Apple</p>
             </p>
           </article>
