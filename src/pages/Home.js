@@ -1,14 +1,14 @@
-import React from 'react'
-import BestPlan from '../components/BestPlan';
-import Blog from '../components/Blog';
-import Deals from '../components/Deals';
-import Footer from '../components/Footer';
-import Header from '../components/Header'
-import Navbar from '../components/Navbar'
-import Necessities from '../components/Necessities';
-import SearchSection from "../components/SearchSection";
-import Subscribe from '../components/Subscribe';
-import Testimonials from '../components/Testimonials';
+import React from "react";
+import BestPlan from "../components/Home/BestPlan";
+import Blog from "../components/Home/Blog";
+import Deals from "../components/Home/Deals";
+import Footer from "../components/Home/Footer";
+import Header from "../components/Home/Header";
+import Navbar from "../components/Home/Navbar";
+import Necessities from "../components/Home/Necessities";
+import SearchSection from "../components/Home/SearchSection";
+import Subscribe from "../components/Home/Subscribe";
+import Testimonials from "../components/Home/Testimonials";
 
 const Home = () => {
   return (
@@ -20,15 +20,15 @@ const Home = () => {
       </div>
       <div>
         <Necessities />
-        <Deals/>
-        <BestPlan/>
-        <Testimonials/>
-        <Blog/> 
-        <Subscribe/>
-        <Footer/>
+        <Deals />
+        <BestPlan />
+        <Testimonials />
+        <Blog />
+        <Subscribe />
+        <Footer />
       </div>
     </>
   );
-}
+};
 
-export default Home
+export default Home;

@@ -1,5 +1,5 @@
 import React from 'react'
-import hotelImg from '../assets/hotel-illus.svg'
+import hotelImg from '../../assets/hotel-illus.svg'
 
 const DashboardIllustration = () => {
   return (

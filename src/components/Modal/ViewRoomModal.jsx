@@ -1,6 +1,6 @@
-import React from 'react'
-import RoomImg from "../assets/room1.jpg";
-import { useStateValue } from "../context/stateProvider";
+import React from "react";
+import RoomImg from "../../assets/room1.jpg";
+import { useStateValue } from "../../context/stateProvider";
 
 const ViewRoomModal = () => {
   const [{ rooms }, dispatch] = useStateValue();
@@ -18,6 +18,6 @@ const ViewRoomModal = () => {
       </article>
     </div>
   );
-}
+};
 
-export default ViewRoomModal
+export default ViewRoomModal;

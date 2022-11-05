@@ -1,9 +1,9 @@
 import React from "react";
-import travelMan from "../assets/man.png";
-import travelManMobile from "../assets/travel-man.png";
-import mapIcon from "../assets/map.png";
-import starIcon from "../assets/star.png";
-import trophyIcon from "../assets/trophy.png";
+import travelMan from "../../assets/man.png";
+import travelManMobile from "../../assets/travel-man.png";
+import mapIcon from "../../assets/map.png";
+import starIcon from "../../assets/star.png";
+import trophyIcon from "../../assets/trophy.png";
 
 const Header = () => {
   return (

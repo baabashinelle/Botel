@@ -1,5 +1,5 @@
 import React from "react";
-import HotelData from "../utils/hotels";
+import HotelData from "../../utils/hotels";
 import { Link } from "react-router-dom";
 import { HiLocationMarker } from "react-icons/hi";
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
@@ -12,7 +12,7 @@ import {
   ButtonNext,
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
-import star from "../assets/review-star.png";
+import star from "../../assets/review-star.png";
 
 const HotelCarousel = ({
   city,
