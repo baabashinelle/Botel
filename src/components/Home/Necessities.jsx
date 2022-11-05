@@ -1,5 +1,5 @@
 import React from 'react'
-import NecessaryCards from '../components/NecessaryCards';
+import NecessaryCards from '../Home/NecessaryCards';
 
 const Necessities = () => {
   return (

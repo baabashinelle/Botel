@@ -1,10 +1,10 @@
 import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
-import tallBuilding from "../assets/tall-building.png";
-import wooden from "../assets/wooden.png";
-import building from "../assets/building.png";
-import rock from "../assets/rocks.png";
+import tallBuilding from "../../assets/tall-building.png";
+import wooden from "../../assets/wooden.png";
+import building from "../../assets/building.png";
+import rock from "../../assets/rocks.png";
 
 const responsive = {
   0: { items: 1 },

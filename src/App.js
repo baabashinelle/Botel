@@ -1,5 +1,4 @@
 import React, { useState} from "react";
-import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import ViewHotels from "./components/Dashboard/ViewHotels";
 import ViewRooms from "./components/Dashboard/ViewRooms";

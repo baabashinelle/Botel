@@ -1,7 +1,7 @@
 import React from "react";
-import formIcon from "../assets/form.png";
-import Wallet from "../assets/wallet.png";
-import Location from "../assets/location.png";
+import formIcon from "../../assets/form.png";
+import Wallet from "../../assets/wallet.png";
+import Location from "../../assets/location.png";
 import { Slide } from "react-awesome-reveal";
 
 const NecessaryCards = () => {
