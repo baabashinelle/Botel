@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from "react";
 import SideBar from "./SideBar";
 import DashboardNav from "./DashboardNav";
-import { useStateValue } from "../context/stateProvider";
-import { FETCH_DATA } from "../utils";
-
+import { useStateValue } from "../../context/stateProvider";
+import { FETCH_DATA } from "../../utils";
 
 const Dashboard = ({ children }) => {
   const [showSideBar, setShowSideBar] = useState(false);
   const handleClick = () => {
     setShowSideBar(!showSideBar);
-  }
+  };
 
   const [{}, disaptch] = useStateValue();
   useEffect(() => {

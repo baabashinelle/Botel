@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { useStateValue } from "../context/stateProvider";
-import Modal from "./Modal";
-import ViewRoomModal from "./ViewRoomModal";
-import BookRoomModal from "./BookRoomModal";
+import { useStateValue } from "../../context/stateProvider";
+import Modal from "../Modal/Modal";
+import ViewRoomModal from "../Modal/ViewRoomModal";
+import BookRoomModal from "../Modal/BookRoomModal";
 import { AiOutlineEye } from "react-icons/ai";
 import { FiBookmark } from "react-icons/fi";
-import Dashboard from "../components/Dashboard";
-import { getHotelName } from "../utils";
-import Preloader from "./Preloader";
+import Dashboard from "../../components/Dashboard/Dashboard";
+import { getHotelName } from "../../utils";
+import Preloader from "../Preloader";
 
 const RoomItem = ({ roomImg, price, status, roomid }) => {
   const [loading, setLoading] = useState(false);

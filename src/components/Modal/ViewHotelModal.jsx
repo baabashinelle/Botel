@@ -1,6 +1,6 @@
 import React from 'react'
-import RoomImg from "../assets/room1.jpg";
-import { useStateValue } from "../context/stateProvider";
+import RoomImg from "../../assets/room1.jpg";
+import { useStateValue } from "../../context/stateProvider";
 
 const ViewHotelModal = () => {
     const [{ rooms }, dispatch] = useStateValue();

@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { useStateValue } from "../context/stateProvider";
-import Modal from "./Modal";
-import ViewHotelModal from "./ViewHotelModal";
+import { useStateValue } from "../../context/stateProvider";
+import Modal from "../Modal/Modal";
+import ViewHotelModal from "../Modal/ViewHotelModal";
 import { AiOutlineEye } from "react-icons/ai";
-import Dashboard from "../components/Dashboard";
-import Preloader from "./Preloader";
+import Dashboard from "../Dashboard/Dashboard";
+import Preloader from "../Preloader";
 
 const HotelItem = ({ hotelImg, name, country, city, status }) => {
   const [loading, setLoading] = useState(false);

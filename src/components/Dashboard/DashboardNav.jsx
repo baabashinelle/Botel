@@ -1,5 +1,5 @@
 import React from "react";
-import avatarImg from "../assets/avatar.JPG";
+import avatarImg from "../../assets/avatar.JPG";
 import { AiOutlineBars } from "react-icons/ai";
 
 const DashboardNav = ({ handleClick }) => {
