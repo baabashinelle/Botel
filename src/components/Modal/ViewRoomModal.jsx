@@ -1,20 +1,24 @@
 import React from "react";
-import RoomImg from "../../assets/room1.jpg";
+import { getRoomById } from "../../utils";
 import { useStateValue } from "../../context/stateProvider";
 
-const ViewRoomModal = () => {
+const ViewRoomModal = ({ id }) => {
   const [{ rooms }, dispatch] = useStateValue();
+  const room = getRoomById(rooms, id);
+  console.log(room);
+  const { image, price, status, desc, maxPeople, roomNumber } = room;
   return (
-    <div className="flex flex-col justify-center px-10 py-10">
+    <div className="flex justify-center px-10 py-10">
       <article>
-        <img src={RoomImg} alt="Room" />
+        <img src={image} alt="Room" />
       </article>
       <article className="flex flex-col gap-2 pt-5">
         <h3 className="font-bold text-lg">Room Description</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-          tempore autem necessitatibus.
-        </p>
+        <p>{price}</p>
+        <p>{status}</p>
+        <p>{desc}</p>
+        <p>{maxPeople}</p>
+        <p>{roomNumber}</p>
       </article>
     </div>
   );

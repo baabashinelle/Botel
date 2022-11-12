@@ -10,6 +10,7 @@ import { getHotelName } from "../../utils";
 import Preloader from "../Preloader";
 
 const RoomItem = ({ roomImg, price, status, roomid }) => {
+
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
@@ -50,7 +51,7 @@ const RoomItem = ({ roomImg, price, status, roomid }) => {
               <Modal
                 isOpen={isOpenView}
                 handleCloseModal={() => setIsOpenView(false)}
-                Design={ViewRoomModal}
+                Design={<ViewRoomModal id={roomid} />}
               />
             )}
 

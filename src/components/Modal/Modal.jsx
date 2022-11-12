@@ -1,9 +1,8 @@
-import React , {useState} from "react";
+import React  from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 
 const Modal = ({ Design, isOpen, handleCloseModal }) => {
-  const [isClose, setIsClose] = useState(false);
 
   return (
     <>
@@ -44,7 +43,7 @@ const Modal = ({ Design, isOpen, handleCloseModal }) => {
               leaveTo="opacity-0 scale-95"
             >
               <div className="inline-block max-w-[36rem] overflow-hidden text-left font-text align-middle transition-all transform bg-white shadow-xl rounded-md">
-                <Design/>
+                {Design}
               </div>
             </Transition.Child>
           </div>

@@ -25,36 +25,13 @@ export const getHotelName = (roomid, hotels) => {
   return hotel;
 };
 
-// export const ADD_HOTEL = async (hotel, url, callback) => {
-//   try {
-//     const { data } = await Axios({
-//       url: "hotels",
-//       method: "POST",
-//       data: {
-//         ...hotel,
-//         image:url
-//       }
-//     });
-//     callback(data);
-//   } catch (err) {
-//     removeImage(url);
-//     console.log(err);
-//   }
-// };
+export const getRoomById = (rooms, id) => {
+  const room = rooms.filter((room) => room._id == id);
+  return room[0];
+}
 
-// export const ADD_ROOM = async (room, url, callback) => {
-//   try {
-//     const { data } = await Axios({
-//       url: `rooms/${room.hotel}`,
-//       method: "POST",
-//       data: {
-//         ...room,
-//         image:url
-//       }
-//     });
-//     callback(data);
-//   } catch (err) {
-//     removeImage(url);
-//     console.log(err);
-//   }
-// };
+export const getHotelById = (hotels, id) => {
+  const hotel = hotels.filter((hotel) => hotel._id == id);
+  return hotel[0];
+};
+
