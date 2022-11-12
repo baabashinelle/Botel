@@ -20,6 +20,13 @@ The hotels and rooms are created by an admin and are posted to an API. The data 
 
 - More on CSS Grids
 
+# STACK
+
+- React JS
+
+- Tailwind CSS
+
+
 # LANDING PAGE INTERFACE
 
 ![image](https://user-images.githubusercontent.com/83133493/199668578-892dfa29-b013-4e86-9d77-a49cbea1a637.png)
