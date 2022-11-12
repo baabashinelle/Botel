@@ -8,7 +8,7 @@ const ViewRoomModal = ({ id }) => {
   console.log(room);
   const { image, price, status, desc, maxPeople, roomNumber } = room;
   return (
-    <div className="flex justify-center px-10 py-10">
+    <div className="flex flex-col justify-center px-10 py-10">
       <article>
         <img src={image} alt="Room" />
       </article>
