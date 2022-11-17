@@ -6,7 +6,7 @@ import { AiOutlineEye } from "react-icons/ai";
 import Dashboard from "../Dashboard/Dashboard";
 import Preloader from "../Preloader";
 
-const HotelItem = ({ hotelImg, name, country, city, status }) => {
+const HotelItem = ({ hotelImg, name, country, city, status, hotelid }) => {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
@@ -48,7 +48,7 @@ const HotelItem = ({ hotelImg, name, country, city, status }) => {
               <Modal
                 isOpen={isOpenView}
                 handleCloseModal={() => setIsOpenView(false)}
-                Design={ViewHotelModal}
+                Design={<ViewHotelModal id={hotelid}/>}
               />
             )}
 
@@ -77,6 +77,7 @@ const ViewHotels = () => {
             city={hotel.city}
             status={hotel.status}
             key={index}
+            hotelid={hotel._id}
           />
         ))}
       </div>
