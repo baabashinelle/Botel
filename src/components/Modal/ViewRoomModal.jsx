@@ -13,12 +13,34 @@ const ViewRoomModal = ({ id }) => {
         <img src={image} alt="Room" />
       </article>
       <article className="flex flex-col gap-2 pt-5">
-        <h3 className="font-bold text-lg">Room Description</h3>
-        <p>{price}</p>
-        <p>{status}</p>
+        <div className="flex justify-between">
+          <p>
+            <span className="bg-[#ffe3d4] text-primary-o px-2 mr-3">Price</span>
+            {price.toFixed(2)}
+          </p>
+          <p>
+            <span className="bg-[#ffe3d4] text-primary-o px-2 mr-3">
+              Status
+            </span>
+            {status}
+          </p>
+        </div>
+        <div className="flex justify-between">
+          <p>
+            <span className="bg-[#ffe3d4] text-primary-o px-2 mr-3">
+              Maximum People
+            </span>
+            {maxPeople}
+          </p>
+          <p>
+            <span className="bg-[#ffe3d4] text-primary-o px-2 mr-3">
+              Room Number
+            </span>
+            {roomNumber}
+          </p>
+        </div>
+        <h3 className="font-bold text-lg pt-3">Room Description</h3>
         <p>{desc}</p>
-        <p>{maxPeople}</p>
-        <p>{roomNumber}</p>
       </article>
     </div>
   );
