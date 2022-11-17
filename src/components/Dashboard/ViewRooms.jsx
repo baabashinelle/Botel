@@ -59,7 +59,7 @@ const RoomItem = ({ roomImg, price, status, roomid }) => {
               <Modal
                 isOpen={isOpenBook}
                 handleCloseModal={() => setIsOpenBook(false)}
-                Design={BookRoomModal}
+                Design={<BookRoomModal/>}
               />
             )}
             <AiOutlineEye
