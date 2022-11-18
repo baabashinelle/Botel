@@ -1,4 +1,4 @@
-# BOTEL
+# BOTEL ( BAABA-HOTEL )
 
 This is a concept of a Hotel Booking Web App. The app allows users to view and book available rooms in a hotel.
 
