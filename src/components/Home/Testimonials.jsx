@@ -13,7 +13,7 @@ const Testimonials = () => {
   };
   return (
     <section className="bg-bg-off flex flex-col lg:flex-row justify-center items-center gap-16 pt-24 pb-20 p-3 xl:p-0 xl:py-14 font-text">
-        <div className="relative md:after:content-[url('./assets/planes.png')] after:block after:absolute xl:after:-right-[45em] lg:after:-right-[31em] md:after:-right-[9.5rem] lg:after:-top-[4em] md:after:top-[3em]">
+        <div className="relative">
           <article className="md:pt-16 xl:pt-0">
             <h3 className="font-header font-bold text-primary-b md:text-4xl sm:text-3xl text-2xl text-center md:text-left">
               What people say <span className="text-primary-o">about us.</span>
@@ -40,9 +40,7 @@ const Testimonials = () => {
           </article>
           <article className="slide-testimonial md:w-[30rem] lg:w-[25rem] sm:w-[20rem] opacity-0 absolute top-14 drop-shadow-md slide-testimonial-active">
             <p className="text-base">
-              “On the Windows talking painted pasture yet its express parties
-              use. Sure last upon he same as knew next. Of believed or diverted
-              no.”
+              “Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa accusamus commodi minima sit, ipsum quo ex quas consequatur labore sequi?.”
             </p>
             <p className="pt-5">
               <div className="font-bold text-sm">Mike Taylor</div>
@@ -51,9 +49,7 @@ const Testimonials = () => {
           </article>
           <article className="slide-testimonial md:w-[30rem] lg:w-[25rem] sm:w-[20rem] opacity-0 drop-shadow-md">
             <p className="text-base">
-              “Sure last upon he same as knew next. Of believed or diverted no.
-              On the Windows talking painted pasture yet its express parties
-              use.”
+              “Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio officia, corrupti voluptates ipsa atque numquam illum ipsam rem culpa laboriosam.”
             </p>
             <p className="pt-5">
               <div className="font-bold text-sm">Chris Taylor</div>

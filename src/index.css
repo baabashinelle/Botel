@@ -99,7 +99,7 @@
 /* Hotels Carousel */
 @media screen and (max-width: 1100px) {
   .carousel {
-    width: 100vw;
+    width: 90vw;
   }
 }
 @media screen and (min-width: 1430px) {

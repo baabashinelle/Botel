@@ -4,7 +4,7 @@ import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 const SearchSection = () => {
   return (
-    <div className="flex md:flex-row flex-col justify-center items-center pb-[8rem]">
+    <div className="flex md:flex-row flex-col justify-center items-center pb-[8rem] pt-[4rem] lg:pt-0">
       <div
         className="bg-white flex md:flex-row flex-col justify-center items-center rounded-md font-text gap-20 lg:w-[55rem] md:w-[45rem] w-[15rem] py-6 md:px-4 lg:px-0 drop-shadow-xl"
       >
