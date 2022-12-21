@@ -1,5 +1,5 @@
 import React from "react";
-// import { BsEnvelope } from "react-icons/bs";
+
 
 const Subscribe = () => {
   return (
@@ -10,9 +10,6 @@ const Subscribe = () => {
             Subscribe and get exclusive deals &amp; offer
           </h2>
           <div className="flex pt-10 justify-center">
-            {/* <span className="absolute text-black">
-            <BsEnvelope />
-          </span> */}
             <input
               type="text"
               placeholder="Enter your mail"
