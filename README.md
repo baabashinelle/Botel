@@ -8,7 +8,7 @@ The hotels and rooms are created by an admin and are posted to an API. The data 
 
 - Users can sign into a dashboard to see all rooms and hotels which are available for booking.
 
-- Admins have access to a separate dashboard where they create hotels and add rooms to hotels to be displayed on the user's dashboard.
+- Admins have access to a separate dashboard where they create hotels and add rooms to hotels to be displayed on the user's dashboard. (Here's the link to the repo of the admin's dashboard: https://github.com/baabashinelle/Botel-Admin)
 
 # CONCEPTS LEARNED 
 
